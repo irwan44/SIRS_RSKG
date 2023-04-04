@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/transparan"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/bg_rectangle_gradient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:layout_width="309dp"
+            android:layout_height="182dp"
+            android:padding="30dp"
+            android:src="@drawable/asset_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="241dp"
+                android:layout_height="68dp"
+                android:fontFamily="@font/bariol_bold"
+                android:text="Anda Belum Terdaftar di Poliklinik Omega Citra Raya"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="241dp"
+                android:layout_height="39dp"
+                android:fontFamily="@font/bariol_bold"
+                android:text="@string/ket_registnew1"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_tidak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/border2"
+                android:onClick="actLogin"
+                android:text="Tidak"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/border3"
+                android:onClick="actLogin"
+                android:text="Ya"
+                android:textColor="@color/blue_500"
+                android:textStyle="bold" />
+
+            <!--            <androidx.appcompat.widget.AppCompatButton-->
+            <!--                android:id="@+id/btn_actKembali"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:layout_marginEnd="7dp"-->
+            <!--                android:background="@drawable/bg_rectangle_grey2"-->
+            <!--                android:backgroundTint="@color/red_maron"-->
+            <!--                android:paddingStart="40dp"-->
+            <!--                android:paddingEnd="40dp"-->
+            <!--                android:text="Cancel"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textStyle="bold" />-->
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+</LinearLayout>

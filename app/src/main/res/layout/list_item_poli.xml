@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/namapoli"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radio_selector"
+    android:button="@color/transparan"
+    android:padding="10dp"
+    android:elevation="1dp"
+    android:fontFamily="@font/bariol_bold"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:text="Poliklinik Penyakit Dalam dan Luar Jiwa Raga"
+    android:textColor="@drawable/text_color">
+</RadioButton>

@@ -1,0 +1,104 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Pluit Care</string>
+    <string name="title_activity_info_dmedis">InfoDmedis</string>
+    <string name="labelLogin">Registrasi Online Klinik Averin Medika</string>
+    <string name="ket_login">Anda Belum Terdaftar atau Login di Aplikasi D-Medis</string>
+    <string name="ket_login2" tools:ignore="ExtraTranslation">Silakan daftar atau Login untuk bisa melakukan registrasi poliklinik</string>
+    <string name="ket_logout">Apakah anda ingin logout ?</string>
+    <string name="ket_registnew1">Apakah Anda ingin daftar sebagai pasien baru?</string>
+    <string name="about_us">
+        "Aplikasi dapat dipergunakan setiap saat tanpa harus melakukan Investasi yang besar dan"
+        "penyedian tenaga kerja (SDM) yang khusus menangani masalah Aplikasi.\n\n"
+        "Provider yang akan melakukan pemeliharaan serta pengembangan E-Klinik, Data dijamin"
+        "kerahasiaannya karena setiap Klinik disediakan Database tersendiri dengan Pengamanan Encrypting."
+        "Cakupan Aplikasi yaitu meliputi Pelayanan Klinik sampai dengan Manajemen Klinik dilengkapi"
+        "sesuai peratuaran yang ada, tanpa melakukan Investasi yang besar dan selalu ter-update baik"
+        "dari segi teknologi maupun peraturan yang berlaku."
+    </string>
+    <string name="notice_antrian">
+        "Datang 30 menit sebelum pemeriksaan dan"
+        "konfirmasi kehadiran baik melalui FO atau Scan QR pada RS"
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="gender">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="goldarah">
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+        <item>Belum diperiksa</item>
+    </string-array>
+
+    <string-array name="nasabah">
+        <item>-- pilih Nasabah --</item>
+        <item>Umum</item>
+        <item>Asuransi/Perusahaan</item>
+        <item>BPJS</item>
+        <item>Karyawan Klinik</item>
+    </string-array>
+    <string-array name="pilihTipeSearch">
+        <item>Klinik</item>
+        <item>Dokter</item>
+    </string-array>
+    <string-array name="hasiltipePilih">
+        <item>-- Pilih Dokter --</item>
+        <item>-- Pilih Klinik --</item>
+    </string-array>
+    <string name="title_activity_regist_poli">RegistPoli</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_regist_lab">RegistLab</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_tes_optionmenu">TesOptionmenu</string>
+    <string name="title_activity_regist_form_online">RegistFormOnline</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_registby_provinsi">RegistbyProvinsi</string>
+    <string name="title_activity_responsiflayar">responsiflayar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+</resources>

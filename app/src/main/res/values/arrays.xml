@@ -1,0 +1,15 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+    <string-array name="tokenAPL">
+        <item>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiJNVVNBIiwidW5hbWUiOiJAQFRUV1lZVyIsInBhc3N3b3JkIjoiNjAyZjA3ZjIzZmMzOTBjZmQ0NDYxYjI2OGY5NWVkZGZiZDRmYzg3ZDliMzEzYjY0YTk0MzgwMWI1ZTRjNWIxMiIsImlzcyI6Imh0dHA6Ly90ZWwuZC1tZWRpcy5pZCIsImV4cCI6MTY2MDAzMTU1OX0.nonitSOlN2b2sCTOY9y0b_T2pmNB-ojy5z3nYc2CEg8</item>
+    </string-array>
+</resources>

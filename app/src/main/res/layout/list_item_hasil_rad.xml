@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/url_rs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"/>
+    <TextView
+        android:id="@+id/kd_klinik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"/>
+    <TextView
+        android:id="@+id/kode_tc_hasilpenunjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"/>
+    <TextView
+        android:id="@+id/txt_kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"/>
+    <TextView
+        android:id="@+id/kode_penunjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"/>
+    <TextView
+        android:id="@+id/kode_tarif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"/>
+    <TextView
+        android:id="@+id/jmlThorax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/transparan"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/no_urut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:text="1."/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginVertical="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_rounded_blue"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_iconKlinik"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_medical_record_black_24dp"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/txt_namatindakan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Nama Tindakan"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:fontFamily="@font/bariol_bold"
+                        android:padding="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_null_hasil_rad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_info_rectangle"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/bariol_regular"
+                            android:gravity="center_vertical"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="File tidak tersedia"
+                            android:visibility="gone" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_cetakhasil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_gravity="left"
+
+                            android:background="@drawable/bg_rectangle_grey"
+                            android:drawableLeft="@drawable/ic_print_blue_20"
+                            android:drawablePadding="10dp"
+                            android:focusable="true"
+                            android:fontFamily="@font/bariol_bold"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="22dp"
+                            android:text="Cetak Hasil"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_lihatfoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/bg_rectangle_grey"
+                            android:drawableLeft="@drawable/ic_gallery_blue_24dp"
+                            android:drawablePadding="10dp"
+                            android:focusable="true"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:text="Lihat Foto"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

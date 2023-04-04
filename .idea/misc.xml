@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_form_add_profile.xml" value="0.1135" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_gradient_blue.xml" value="0.1225" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_icon.xml" value="0.1225" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_icon_blue.xml" value="0.1225" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_main.xml" value="0.1225" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_rcyleview_white.xml" value="0.1175" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_rectangle_grey.xml" value="0.2335" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_rounded_blue.xml" value="0.1955" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_rounded_cyan.xml" value="0.2335" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_rounded_grey.xml" value="0.1955" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_rounded_red.xml" value="0.2335" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/bg_rounded_white.xml" value="0.1225" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/box_outline_antri.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/btn_mainmenu.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/cardview_rounded_white.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/circular_progress_bar.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/circular_progress_bar_whitebg.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/colored_rounded_button.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/colored_small_rounded_white.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_account_black_24dp.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_antrian_pasien_24dp.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_arrow_white_down_32dp.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_arrow_white_up_32dp.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_background_accent_rounded.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_background_blue_trnsp_rounded.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_background_large_edittext_item.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_background_red_rounded.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_background_spinner_item.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_background_spinner_title.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_bg_main.xml" value="0.1225" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_calendar_primary.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_cek_hasil_mr.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_check_white.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_circle_blue.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_circle_white.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_data_mr_pasien.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_delete_white.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_dokter.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_edit_profile.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_email24_blue.xml" value="0.1545" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_hospital.xml" value="0.1955" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_icd.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_indonesia_rupiah_currency_symbol.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_info.xml" value="0.1225" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_laboratorium.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_laboratorium_blue.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_launcher_background.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_login15.xml" value="0.2335" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_login_15.xml" value="0.2335" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_login_24.xml" value="0.1635" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_logo_antam_medika.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_logo_hermina.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_logout_icon.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_mail24.xml" value="0.1295" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_medical_record_black_24dp.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_mr10.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_mr24.xml" value="0.1635" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_pendapatan_black_24dp.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_phone24.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_poliklinik.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_radiologi.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_radiologi_blue.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_regist10.xml" value="0.1405" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_resep_white.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_rgs.xml" value="0.1225" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_ripple_blue_button.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_rujuk.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_search_white_24dp.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_soap_black_24dp.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/drawable/ic_tindakan_white.xml" value="0.242" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_info_dmedis.xml" value="0.3570552147239264" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_klinik_list.xml" value="0.22" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_login.xml" value="0.1921875" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_regist_form_online.xml" value="0.1921875" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_regist_klinik.xml" value="0.25" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_regist_klinik_detail.xml" value="0.25" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_regist_lab.xml" value="0.1921875" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_regist_pasien_lama.xml" value="0.33" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_regist_poli.xml" value="0.33" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_splash_screen.xml" value="0.24010416666666667" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_splash_screen2.xml" value="0.24010416666666667" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/activity_tes_optionmenu.xml" value="0.1921875" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/content_regist_poli.xml" value="0.14479166666666668" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/content_scrolling.xml" value="0.23095238095238096" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/dashboard_exm.xml" value="0.33" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/dialog_confirm.xml" value="0.12135416666666667" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/form_add_poli.xml" value="0.22" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/fragment_first.xml" value="0.14479166666666668" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/fragment_first2.xml" value="0.1921875" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/fragment_regist_form_online.xml" value="0.178125" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/fragment_regist_online_dokter.xml" value="0.33" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/fragment_regist_online_klinik.xml" value="0.33" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/fragment_second.xml" value="0.1921875" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/list_item_berita.xml" value="0.1921875" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/list_item_dokter.xml" value="0.33" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/list_item_klinik.xml" value="0.25" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/list_item_promo.xml" value="0.25" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/layout/login_layout.xml" value="0.146875" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/menu/menu_info_dmedis.xml" value="0.25" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/menu/menu_scrolling.xml" value="0.25" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/menu/optionmenu.xml" value="0.12135416666666667" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/mipmap-anydpi-v26/bg_main.xml" value="0.1225" />
+        <entry key="..\:/Data Kerja/Android Projects/D_Medis/app/src/main/res/xml/root_preferences.xml" value="0.5" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/avatar_1.xml" value="0.1415" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/avatar_8.xml" value="0.1415" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_form_add_profile.xml" value="0.1415" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_gradient_blue.xml" value="0.1415" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_icon_blue.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_rcyleview_white.xml" value="0.1415" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_rectangle_gradient2.xml" value="0.1195" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_rectangle_grey.xml" value="0.1195" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_rectangle_grey2.xml" value="0.2205" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_rounded_blue.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_rounded_cyan.xml" value="0.1415" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_rounded_grey.xml" value="0.151" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_rounded_red.xml" value="0.1415" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_rounded_white.xml" value="0.151" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/bg_toolbar_white.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/gradient1.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/gradient2.xml" value="0.1195" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/gradient3.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_account_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_antrian_pasien_24dp.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_arrow_white_down_32dp.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_arrow_white_up_32dp.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_attach_file24.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_back24.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_back_white25.xml" value="0.149" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_calendar_primary.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_camera_alt.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_cancel24.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_cek_hasil_mr.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_check_white.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_circle_blue.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_circle_white.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_circular_blue_button_filter.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_contact_phone_20.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_data_mr_pasien.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_delete_white.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_diagnosa.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_dokter.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_edit_profile.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_email10.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_email15.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_email24_black.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_email24_blue.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_fisioterapi.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_hospital.xml" value="0.2225" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_hospital15.xml" value="0.2225" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_icd.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_kesan.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_laboratorium.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_login15.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_login_15.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_login_24.xml" value="0.139" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_logout24.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_medical_record_black_24dp.xml" value="0.2225" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_menu_daftarantrian.xml" value="0.2225" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_menu_registklinik.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_mr10.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_mr24.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_password24_blue.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_pendapatan_black_125dp.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_pengobatan.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_personcheck50.xml" value="0.113" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_radiologi.xml" value="0.2225" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_regist15.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_regist24.xml" value="0.139" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_resep_white.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_rgs.xml" value="0.2225" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_ripple_blue_button.xml" value="0.2225" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_save24.xml" value="0.12" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_search_white_24dp.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_settings_black_24dp.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_slideshow_black_24dp.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_soap_black_24dp.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_time24.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/ic_tindakan_white.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/layout_bg.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/password_icon.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/drawable/side_nav_bar.xml" value="0.2005" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout-w1240dp/content_responsiflayar.xml" value="0.25390625" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.13741496598639455" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_antrian.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_antrian_detail.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_daftar_poli.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_dashboard.xml" value="0.18691588785046728" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_detail_klinik.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_developtment.xml" value="0.1390625" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_info_dmedis.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_mrpasien.xml" value="0.17" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_mrpasien2.xml" value="0.22" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_regist_form_online.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_regist_klinik.xml" value="0.18" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_regist_klinik_detail.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_regist_lab.xml" value="0.146875" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_regist_pasien_lama.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_regist_poli.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_registby_provinsi.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_registrasi_form.xml" value="0.24875124875124874" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_scan_qrcode.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_splash_screen.xml" value="0.16" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/activity_test_spinner.xml" value="0.12916666666666668" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/content_registby_provinsi.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/content_responsiflayar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/content_scrolling.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_ask_login.xml" value="0.22" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_ceklogin.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_confirm.xml" value="0.17447916666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_confirm_failed.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_daftar_poli.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_exit_confirm.xml" value="0.128125" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_failed_regist.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_form_cari_provinsi.xml" value="0.203125" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_new.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_spinner.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/dialog_token_expire.xml" value="0.22" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/fragment_regist_online_dokter.xml" value="0.209375" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/fragment_regist_online_klinik.xml" value="0.11666666666666667" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/fragment_second.xml" value="0.10520833333333333" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/fragment_transform.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/layout_baru.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_dokter_lab.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_dokter_poli.xml" value="0.22" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_item_antrian.xml" value="0.22" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_item_antrian_homepage.xml" value="0.3046272493573265" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_item_berita.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_item_dokter.xml" value="0.26666666666666666" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_item_dokter_poli.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_item_jadwal_dokter.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_item_klinik.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_item_klinik_terdekat.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_item_mr.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/list_item_promo.xml" value="0.16354166666666667" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/layout/login_layout.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/menu/menu_scrolling.xml" value="0.10520833333333333" />
+        <entry key="..\:/Dev_Android/D_Medis/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1415" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable-v24/ic_baseline_qr_code_scanner_24.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable-v24/ic_doctor.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/about_description_help_svgrepo_com.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/akar_icons_schedule.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/bg_rectangle_gradient2.xml" value="0.125" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/bg_rectangle_grey.xml" value="0.1295" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/bg_rectangle_grey2.xml" value="0.1295" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/bg_rounded_grey.xml" value="0.1295" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/bg_rounded_red.xml" value="0.125" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/black_transp_circ_ripple.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/border.xml" value="0.1215" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/border2.xml" value="0.1215" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/border3.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/border4.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/bx_clinic.xml" value="0.1215" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_baseline_do_not_disturb_24.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_baseline_password_24.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_bg.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_blood.xml" value="0.1295" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_cancel24.xml" value="0.1385" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_cek_hasil_mr.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_check_white.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_circle_white.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_circular_blue_button_filter.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_contact_phone_20.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_data_mr_pasien.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_delete_white.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_diagnosa.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_dokter.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_edit_password.xml" value="0.1245" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_edit_profile.xml" value="0.1295" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_email24_black.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_email24_blue.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_fisioterapi.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_gallery_black_24dp.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_hospital.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_hospital15.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_info_rectangle.xml" value="0.1245" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_kode1__2_.xml" value="0.1165" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1245" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/logout.xml" value="0.1155" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/password_icon.xml" value="0.2245" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/drawable/user_icon.xml" value="0.2245" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_antrian.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_antrian_detail.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_crop_image.xml" value="0.22" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_daftar_poli.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_dashboard.xml" value="0.26238286479250333" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_detail_klinik.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_developtment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_edit_pasien_lama.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_info_dmedis.xml" value="0.22" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_list_dokter.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_privy_info.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_regist_klinik.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_regist_klinik_detail.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_regist_pasien_lama.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_regist_poli.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_registby_provinsi.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_registrasi_form.xml" value="0.22" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/dialog_ask_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/dialog_ask_logout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/dialog_ask_regist_new_px.xml" value="0.365625" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/dialog_daftar_poli.xml" value="0.2" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/dialog_exit_confirm.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/dialog_failed_regist.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/dialog_spinner.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/dialog_success_regist.xml" value="0.13072916666666667" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/layout_baru.xml" value="0.15364583333333334" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/list_dokter_klinik.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/list_item_antrian.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/list_item_antrian_homepage.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/list_item_dokter_poli.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/list_item_jadwal_dokter.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/list_item_klinik.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/list_item_klinik_shimmer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/list_item_klinik_terdekat.xml" value="0.5" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/list_item_mr.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/list_klinik_shimmer_animed.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/login_layout.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/layout/swipe_ganti_foto.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/mipmap-anydpi-v26/bg_main.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/mipmap-anydpi-v26/bg_main_round.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/Mobile_Regist_Online/app/src/main/res/mipmap-anydpi-v26/icon_dmedis_round.xml" value="0.125" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_antrian.xml" value="0.13645833333333332" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_antrian_detail.xml" value="0.33" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_crop_image.xml" value="0.13645833333333332" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_daftar_poli.xml" value="0.21" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_dashboard.xml" value="0.22" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_detail_klinik.xml" value="0.13645833333333332" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_edit_pasien_lama.xml" value="0.21" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_info_dmedis.xml" value="0.13645833333333332" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_regist_poli.xml" value="0.18" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_registby_provinsi.xml" value="0.13645833333333332" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_registrasi_form.xml" value="0.25" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_scan_qrcode.xml" value="0.13645833333333332" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/dialog_ask_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/dialog_ask_regist_new_px.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/list_item_jadwal_dokter.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/list_item_mr.xml" value="0.13645833333333332" />
+        <entry key="..\:/Dev_Android/Sirs Regist Online/app/src/main/res/layout/swipe_ganti_foto.xml" value="0.13645833333333332" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/drawable/bg_rectangle_gradient2.xml" value="0.294" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/drawable/bg_rectangle_grey2.xml" value="0.1925" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/drawable/bg_rounded_blue.xml" value="0.248" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/drawable/bg_rounded_cyan.xml" value="0.248" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/drawable/ic__01_boy.xml" value="0.294" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/drawable/ic_bg.xml" value="0.1925" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/drawable/ic_icon_location__1_.xml" value="0.1925" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/drawable/ic_kode1__2_.xml" value="0.294" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/drawable/ic_noun_corona_3399685_1.xml" value="0.294" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.15562248995983935" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.272248243559719" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_antrian.xml" value="0.75" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_antrian_detail.xml" value="0.25" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_daftar_poli.xml" value="0.33" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_dashboard.xml" value="0.11644736842105263" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_detail_klinik.xml" value="0.3017521090201168" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_developtment.xml" value="0.5421875" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_info_dmedis.xml" value="0.35778985507246375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_mrpasien.xml" value="0.5" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_mrpasien2.xml" value="0.25" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_regist_klinik.xml" value="0.5" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_regist_klinik_detail.xml" value="0.35778985507246375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_regist_pasien_lama.xml" value="0.25" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_regist_poli.xml" value="0.35778985507246375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_registby_provinsi.xml" value="0.67" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_registrasi_form.xml" value="0.35778985507246375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_scan_qrcode.xml" value="0.33" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_splash_screen.xml" value="0.5421875" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/activity_test_spinner.xml" value="0.35778985507246375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/content_scrolling.xml" value="0.36328125" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/dialog_ask_login.xml" value="0.25" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/dialog_daftar_poli.xml" value="0.184375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/dialog_exit_confirm.xml" value="0.2967079948696024" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/dialog_failed_regist.xml" value="0.184375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/dialog_spinner.xml" value="0.184375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/dialog_success_regist.xml" value="0.184375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/layout_baru.xml" value="0.184375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/list_item_antrian.xml" value="0.33" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/list_item_antrian_homepage.xml" value="0.35778985507246375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/list_item_dokter_poli.xml" value="0.35778985507246375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/list_item_jadwal_dokter.xml" value="0.25" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/list_item_klinik.xml" value="0.75" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/list_item_klinik_terdekat.xml" value="0.67" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/list_item_mr.xml" value="0.5" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/login_layout.xml" value="0.35778985507246375" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/layout/toolbar_layout.xml" value="0.5" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/menu/bottom_navigation.xml" value="0.19880290722530997" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/menu/menu_scrolling.xml" value="0.19880290722530997" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/menu/navigation_drawer.xml" value="0.19880290722530997" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/menu/optionmenu.xml" value="0.19880290722530997" />
+        <entry key="..\:/Users/irwan/AndroidStudioProjects/Mobile_Regist_Online/app/src/main/res/menu/overflow.xml" value="0.19880290722530997" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

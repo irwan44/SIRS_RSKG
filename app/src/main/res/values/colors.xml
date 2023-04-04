@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#4BABE7</color>
+    <color name="purple_700">@color/transparan</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="shadowblade">#B3D8D9CF</color>
+    <color name="black">#FF000000</color>
+    <color name="black2">#1C1C1C</color>
+    <color name="white">#F6F9FE</color>
+    <color name="transparan">#0000</color>
+    <color name="red_maron">#C21010</color>
+    <color name="red_muda">#F96666</color>
+    <color name="imageBorderColor">#033D95</color>
+    <color name="primaryColor">#00acc1</color>
+    <color name="primaryLightColor">#5ddef4</color>
+    <color name="primaryDarkColor">#007c91</color>
+    <color name="primaryLessOpacity">#9800acc1</color>
+    <color name="primaryDarkLessOpacity">#98007c91</color>
+    <color name="primaryDisabled">#614E4E4E</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="primaryWhiteColor">#F6F9FE</color>
+    <color name="AccentColor">#7a7cff</color>
+    <color name="bg">#F6F9FE</color>
+    <color name="colorRipple">#E5F5F5</color>
+    <color name="backgroundDarkGrey">#F6F9FE</color>
+    <color name="colorBackground">#F6F9FE</color>
+
+    <!--color untuk gradient tansition-->
+    <color name="bacground">#F6F9FE</color>
+    <color name="purple_500">#9c27b0</color>
+    <color name="deep_purple_500">#673ab7</color>
+    <color name="indigo_500">#3f51b5</color>
+    <color name="blue_500">#2196f3</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="light_blue_500">#03a9f4</color>
+    <color name="birufigma">#4BABE7</color>
+    <color name="contentBodyColor">#F6F9FE</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="bottomNavigationBackground">#F7F7F7</color>
+    <color name="miniTitle">#2A2E43</color>
+</resources>

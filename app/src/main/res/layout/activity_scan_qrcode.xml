@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scannerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoFocusButtonColor="@android:color/transparent"
+        app:autoFocusButtonVisible="false"
+        app:flashButtonColor="@android:color/transparent"
+        app:flashButtonVisible="false"
+        app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@android:color/transparent"
+        app:frameCornersRadius="0dp"
+        app:frameCornersSize="0dp"
+        app:frameSize="1"
+        app:frameThickness="0dp"
+        app:maskColor="@android:color/transparent" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_qrcode">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan QR Code"
+            android:fontFamily="@font/bariol_bold"
+            android:textSize="32sp"
+            android:translationY="130dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arahkan kamera pada code QR untuk\n melakukan kehadiran pada klinik"
+            android:fontFamily="@font/bariol_bold"
+            android:textSize="18sp"
+            android:translationY="180dp"
+            android:textColor="#A6FFFFFF"
+            android:textAlignment="center"/>
+    </FrameLayout>
+</RelativeLayout>

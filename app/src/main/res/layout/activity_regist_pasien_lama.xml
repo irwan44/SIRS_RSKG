@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!--TOOLBAR-->
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/pg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/transparan"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Profile"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:src="@drawable/icon_left"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fotoPasien"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/profile22"
+                app:civ_border_color="@color/imageBorderColor"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/txt_namaPasien"
+                style="@style/viewParent.headerText"
+                android:layout_width="130dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bariol_bold"
+                android:layout_toRightOf="@id/fotoPasien"
+                android:text="Irwan Setiawan"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_no_mr"
+                style="@style/viewParent.headerText"
+                android:layout_below="@id/txt_namaPasien"
+                android:layout_toRightOf="@id/fotoPasien"
+                android:text="98765454533567"
+                android:textColor="#5D5C5C"
+                android:fontFamily="@font/bariol_bold"
+                android:textSize="16sp" />
+            <!--            <ImageView-->
+            <!--                style="@style/viewParent"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:src="@drawable/ic_more" />-->
+=======
+<!--            <ImageView-->
+<!--                style="@style/viewParent"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:src="@drawable/ic_more" />-->
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:fontFamily="@font/bariol_bold"
+            android:text="Profile" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_editprofile"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/ic_edit_profile"
+            android:background="@color/transparan"
+            android:foreground="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:fontFamily="@font/bariol_bold"
+            android:text="Edit Profile" />
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_changepass"-->
+<!--            style="@style/viewParent.headerText.settingsTextIcon"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@color/transparan"-->
+<!--            android:drawableLeft="@drawable/ic_edit_password"-->
+<!--            android:fontFamily="@font/bariol_bold"-->
+<!--            android:foreground="?attr/selectableItemBackground"-->
+<!--            android:text="Ubah Password"-->
+<!--            android:textAllCaps="false" />-->
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:fontFamily="@font/bariol_bold"
+            android:text="About" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/icon_attention"
+            android:fontFamily="@font/bariol_bold"
+            android:textAllCaps="false"
+            android:background="@color/transparan"
+            android:text="Informasion apps" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:fontFamily="@font/bariol_bold"
+            android:text="Exit" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogout"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/ic_logout"
+            android:fontFamily="@font/bariol_bold"
+            android:textAllCaps="false"
+            android:background="@color/transparan"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Logout" />
+
+<!--        <TextView-->
+<!--            style="@style/viewParent.headerText.settingsMiniTitle"-->
+<!--            android:layout_height="31dp"-->
+<!--            android:fontFamily="@font/bariol_bold"-->
+<!--            android:text="Aplikasi Terhubung" />-->
+
+<!--       <LinearLayout-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:orientation="horizontal"-->
+<!--           android:gravity="center"-->
+<!--           android:layout_height="wrap_content">-->
+
+<!--           <androidx.appcompat.widget.AppCompatButton-->
+<!--               android:id="@+id/Privy"-->
+<!--               android:layout_width="205dp"-->
+<!--               android:layout_height="match_parent"-->
+<!--               android:background="@color/transparan"-->
+<!--               android:drawableLeft="@drawable/privy3"-->
+<!--               android:fontFamily="@font/bariol_bold"-->
+<!--               android:paddingRight="90dp"-->
+<!--               android:layout_gravity="left"-->
+<!--               android:text="Privy.id"-->
+<!--               android:textAllCaps="false" />-->
+
+<!--           <androidx.cardview.widget.CardView-->
+<!--               android:id="@+id/btn_privy"-->
+<!--               android:layout_width="126dp"-->
+<!--               android:layout_height="40dp"-->
+<!--               android:layout_gravity="right"-->
+<!--               app:cardBackgroundColor="@color/birufigma"-->
+<!--               app:cardCornerRadius="30dp"-->
+<!--               android:foreground="?attr/selectableItemBackground"-->
+<!--               app:cardElevation="0dp">-->
+
+<!--               <TextView-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="match_parent"-->
+<!--                   android:text="Sambungkan"-->
+<!--                   android:textStyle="bold"-->
+<!--                   android:fontFamily="@font/bariol_bold"-->
+<!--                   android:textColor="@color/white"-->
+<!--                   android:foreground="?attr/selectableItemBackground"-->
+<!--                   android:gravity="center">-->
+
+<!--               </TextView>-->
+
+<!--           </androidx.cardview.widget.CardView>-->
+<!--       </LinearLayout>-->
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

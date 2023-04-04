@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/pg_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:elevation="0dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="236dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/tb_poto"
+                        android:layout_width="94dp"
+                        android:layout_height="71dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        android:src="@drawable/profile"
+                        app:civ_border_color="@color/imageBorderColor"
+                        app:civ_border_width="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lbl_namapasien"
+                            android:layout_width="217dp"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:text="👋Hi,"
+                            android:textColor="#8D92A3"
+                            android:textSize="20dp"
+                            android:translationY="15dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/namaPasien"
+                            android:layout_width="150dp"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:text="Dayat Samsu"
+                            android:textColor="#8D92A3"
+                            android:textSize="20dp"
+                            android:translationX="15dp"
+                            android:translationY="-10dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/noKTP"
+                            android:layout_width="215dp"
+                            android:layout_height="25dp"
+                            android:text="12345678910"
+                            android:textColor="#8D92A3"
+                            android:textSize="13dp"
+                            android:translationY="-7dp">
+
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/btn_notif"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:translationY="-5dp"
+                            android:background="@color/transparan"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_baseline_notifications_24">
+
+                        </ImageButton>
+
+
+                        <TextView
+                            android:id="@+id/txt_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+                            android:onClick="openvcs"
+                            android:text="Daftar/Login"
+                            android:textColor="#4BABE7"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"
+                            android:gravity="center"
+                            android:textStyle="bold">
+
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </LinearLayout>
+</RelativeLayout>

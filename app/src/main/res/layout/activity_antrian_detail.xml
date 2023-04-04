@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context=".AntrianDetail">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardBackgroundColor="#4BABE7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/pg_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:background="#4BABE7"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/bariol_bold"
+                    android:gravity="center"
+                    android:text="Antrian Rumah Sakit"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                </TextView>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:navigationIcon="@drawable/icon_left_putih">
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <TextView
+            android:id="@+id/nmKlinik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/jenisPoli"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="80dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="370dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="192dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/pg_jadwal"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:translationX="20dp"
+                    android:translationY="20dp">
+
+                    <TextView
+                        android:id="@+id/tglPeriksa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bariol_bold"
+                        android:padding="5dp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/jamPeriksa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/teal_200"
+                        android:fontFamily="@font/bariol_bold"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/birufigma"
+                        android:textSize="40sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="3sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginEnd="95dp"
+                    android:background="@color/birufigma"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="2dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="9dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:translationX="-80dp"
+                    android:translationY="20dp">
+
+                    <TextView
+                        android:id="@+id/lb_antrian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bariol_bold"
+                        android:padding="5dp"
+                        android:text="No Antrian Saya"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/no_Antrian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/teal_200"
+                        android:fontFamily="@font/bariol_bold"
+                        android:padding="5dp"
+                        android:textColor="@color/birufigma"
+                        android:textSize="44sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/pg_dokter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pg_jadwal"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pg_jadwal">
+
+                <TextView
+                    android:id="@+id/nma_Dokter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:fontFamily="@font/bariol_bold"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/jenisPasien"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="5sp"-->
+<!--                    android:drawableLeft="@drawable/ic_poliklinik"-->
+<!--                    android:drawablePadding="7sp"-->
+<!--                    android:fontFamily="@font/bariol_regular"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="Poliklinik Umum"-->
+<!--                    android:textSize="14sp" />-->
+
+                <TextView
+                    android:id="@+id/wktPeriksa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:drawableLeft="@drawable/ic_time24"
+                    android:drawablePadding="7sp"
+                    android:fontFamily="@font/bariol_bold"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textColor="@color/birufigma"
+                    android:textSize="14sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="348dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6"
+        app:layout_constraintVertical_bias="0.096">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/pg_reg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_below="@+id/pg_dokter"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/jenisPasien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/birufigma"
+                android:fontFamily="@font/bariol_bold"
+                android:text="Nasabah Umum"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txt_info_antrian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/bariol_bold"
+                android:text=""
+                android:textSize="14sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="850dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="620dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_btnscan"
+            android:layout_width="230dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_scan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_rounded_cyan"
+                android:drawableLeft="@drawable/ic_baseline_qr_code_scanner_24"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:onClick="ScanKlinik"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:text="Scan RS"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/txt_stat_hadir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah Hadir"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:drawablePadding="7dp"
+                android:fontFamily="@font/bariol_bold"
+                android:drawableLeft="@drawable/ic_info_rectangle"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".DetailKlinik">
+
+    <!--TOOLBAR-->
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/pg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Info RS"
+                android:textSize="20dp"
+                android:fontFamily="@font/bariol_bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </TextView>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                app:navigationIcon="@drawable/icon_left"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/txt_login"
+                android:layout_width="124dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:onClick="openvcs"
+                android:visibility="gone"
+                android:text="Login/Daftar"
+                android:textColor="#4BABE7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    <!--    END TOOLBAR-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationY="60dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:ignore="MissingConstraints">
+        <androidx.cardview.widget.CardView
+            android:translationY="10dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="13dp"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_fotoKlinik"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/img_detailklinik"
+        tools:layout_editor_absoluteY="-4dp" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/nama_klinik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40sp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:fontFamily="@font/bariol_bold"
+            android:padding="5sp"
+            android:text="Klinik Omega Raya Citra"/>
+        <TextView
+            android:id="@+id/alamat_klinik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/nama_klinik"
+            app:layout_constraintEnd_toEndOf="@+id/nama_klinik"
+            android:layout_marginTop="5sp"
+            android:drawablePadding="10sp"
+            android:padding="5sp"
+            android:fontFamily="@font/bariol_regular"
+            android:layout_marginEnd="20dp"
+            android:drawableLeft="@drawable/group"
+            android:text="Jl Raya Rayain apa ajj No. 23, Jakarta Selatan, Indonesia"/>
+        <TextView
+            android:id="@+id/email_klinik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/alamat_klinik"
+            android:layout_marginTop="5sp"
+            android:drawablePadding="10sp"
+            android:padding="5sp"
+            android:fontFamily="@font/bariol_regular"
+            android:layout_marginEnd="20dp"
+            android:drawableLeft="@drawable/carbon_email"
+            android:text="information@omega.co.id"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_registPoli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingStart="40sp"
+            android:paddingEnd="40sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bariol_bold"
+            android:background="@drawable/bg_rectangle_gradient2"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="Registrasi Poliklinik"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

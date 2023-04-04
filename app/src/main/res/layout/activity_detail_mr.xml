@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailMR"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:outlineAmbientShadowColor="@color/birufigma"
+        android:outlineSpotShadowColor="@color/birufigma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bariol_bold"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Detail History Medis"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:navigationIcon="@drawable/arrow_left"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/LayoutItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_rectangle_gradient2"
+                            android:clickable="true">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/txt_namaklinik"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:textColor="@color/white"
+                                        android:text=" - "
+                                        android:textSize="20sp"
+                                        android:visibility="gone"
+                                        android:fontFamily="@font/bariol_bold"/>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/txt_namadokter"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:drawableLeft="@drawable/ic_medical_record_black_24dp"
+                                            android:drawablePadding="7dp"
+                                            android:gravity="center_vertical"
+                                            android:fontFamily="@font/bariol_bold"
+                                            android:maxLines="1"
+                                            android:textSize="16sp"
+                                            android:text=" - "
+                                            android:textColor="@color/white" />
+                                        <TextView
+                                            android:padding="5dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=" - "
+                                            android:textSize="16sp"
+                                            android:fontFamily="@font/bariol_bold"
+                                            android:textColor="@color/white"/>
+                                        <TextView
+                                            android:id="@+id/txt_namaPoli"
+                                            android:textSize="14sp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:fontFamily="@font/bariol_bold"
+                                            android:maxLines="1"
+                                            android:text="Poliklinik UMum"
+                                            android:textColor="@color/white" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/lb_tglperiksa"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:drawableLeft="@drawable/icon_calendar"
+                                            android:drawablePadding="7dp"
+                                            android:textSize="12sp"
+                                            android:gravity="center_vertical"
+                                            android:fontFamily="@font/bariol_bold"
+                                            android:maxLines="1"
+                                            android:text="Tgl Periksa : "
+                                            android:textColor="@color/white" />
+                                        <TextView
+                                            android:id="@+id/txt_tgl_periksa"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:textSize="12sp"
+                                            android:fontFamily="@font/bariol_bold"
+                                            android:text=" - "
+                                            android:textColor="@color/white" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Data Pasien"
+                                            android:gravity="center"
+                                            android:textColor="@color/white"
+                                            android:padding="2dp"
+                                            android:fontFamily="@font/bariol_bold"
+                                            android:textSize="16sp"/>
+
+                                        <LinearLayout
+                                            android:id="@+id/linearLayout4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingStart="20dp"
+                                            android:paddingBottom="20dp"
+                                            android:paddingEnd="20dp"
+                                            android:paddingTop="10dp">
+
+                                            <GridLayout
+                                                android:id="@+id/GridPasien"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:columnCount="3"
+                                                android:rowCount="6">
+
+                                                <!--        ROW 1 UMUR-->
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="0"
+                                                    android:layout_column="0"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingBottom="5dp"
+                                                    android:textColor="@color/white"
+                                                    android:text="Nama"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="0"
+                                                    android:layout_column="1"
+                                                    android:paddingStart="9dp"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingEnd="9dp"
+                                                    android:textColor="@color/white"
+                                                    android:paddingBottom="5dp"
+                                                    android:text=":"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/txt_namaPasien"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="0"
+                                                    android:layout_column="2"
+                                                    android:textColor="@color/white"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:padding="5dp"
+                                                    android:text=" - "
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <!--        ROW 2 GOL. DARAH-->
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="1"
+                                                    android:layout_column="0"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:textColor="@color/white"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingBottom="5dp"
+                                                    android:text="No MR"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="1"
+                                                    android:layout_column="1"
+                                                    android:paddingStart="9dp"
+                                                    android:paddingTop="5dp"
+                                                    android:textColor="@color/white"
+                                                    android:paddingEnd="9dp"
+                                                    android:paddingBottom="5dp"
+                                                    android:text=":"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/txt_mrPasien"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="1"
+                                                    android:layout_column="2"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:textColor="@color/white"
+                                                    android:padding="5dp"
+                                                    android:text=" - "
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <!--        ROW 3 Jenis Kelamin-->
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="2"
+                                                    android:layout_column="0"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:paddingTop="5dp"
+                                                    android:textColor="@color/white"
+                                                    android:paddingBottom="5dp"
+                                                    android:text="Umur"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="2"
+                                                    android:layout_column="1"
+                                                    android:paddingStart="9dp"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingEnd="9dp"
+                                                    android:paddingBottom="5dp"
+                                                    android:textColor="@color/white"
+                                                    android:text=":"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/txt_umurPasien"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="2"
+                                                    android:layout_column="2"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:textColor="@color/white"
+                                                    android:padding="5dp"
+                                                    android:text=" - "
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <!--        ROW 4 ALERGI-->
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="3"
+                                                    android:layout_column="0"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:textColor="@color/white"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingBottom="5dp"
+                                                    android:text="Golongan Darah"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="3"
+                                                    android:layout_column="1"
+                                                    android:paddingStart="9dp"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingEnd="9dp"
+                                                    android:textColor="@color/white"
+                                                    android:paddingBottom="5dp"
+                                                    android:text=":"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/txt_golDarah"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="3"
+                                                    android:layout_column="2"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:textColor="@color/white"
+                                                    android:padding="5dp"
+                                                    android:text=" - "
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <!--        ROW 5 No. HP-->
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="4"
+                                                    android:layout_column="0"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:paddingTop="5dp"
+                                                    android:textColor="@color/white"
+                                                    android:paddingBottom="5dp"
+                                                    android:text="Jenis Kelamin"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="4"
+                                                    android:layout_column="1"
+                                                    android:paddingStart="9dp"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingEnd="9dp"
+                                                    android:paddingBottom="5dp"
+                                                    android:text=":"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/txt_jekelPasien"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="4"
+                                                    android:layout_column="2"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:padding="5dp"
+                                                    android:textColor="@color/white"
+                                                    android:text=" - "
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+                                                <!--        ROW 6 Alergi-->
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="5"
+                                                    android:layout_column="0"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:paddingTop="5dp"
+                                                    android:textColor="@color/white"
+                                                    android:paddingBottom="5dp"
+                                                    android:text="Alergi"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="5"
+                                                    android:layout_column="1"
+                                                    android:paddingStart="9dp"
+                                                    android:paddingTop="5dp"
+                                                    android:paddingEnd="9dp"
+                                                    android:paddingBottom="5dp"
+                                                    android:text=":"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/txt_alergiPasien"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_row="5"
+                                                    android:layout_column="2"
+                                                    android:layout_columnWeight="0.5"
+                                                    android:fontFamily="@font/bariol_bold"
+                                                    android:padding="5dp"
+                                                    android:textColor="@color/white"
+                                                    android:text=" - "
+                                                    android:textSize="12dp"
+                                                    android:textStyle="bold" />
+                                            </GridLayout>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/imgPasien"
+                                        android:layout_width="101dp"
+                                        android:layout_height="103dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginHorizontal="10dp"
+                                        android:layout_marginVertical="5dp"
+                                        android:src="@drawable/profile22"
+                                        app:civ_border_color="@color/white"
+                                        app:civ_border_overlay="true"
+                                        app:civ_border_width="4dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/backgroundDarkGrey"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_marginVertical="7dp"
+                        app:cardCornerRadius="5dp"
+                        android:outlineAmbientShadowColor="@color/birufigma"
+                        android:outlineSpotShadowColor="@color/birufigma"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:paddingLeft="13dp"
+                            android:paddingRight="8dp"
+                            android:text="VITAL SIGN"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="Keadaan Umum"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="2dp"
+                                        android:text=":"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_keadaanumum"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:textSize="13sp"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="Tekanan Darah"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="2dp"
+                                        android:text=":"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_TekananDarah"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="Suhu"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="2dp"
+                                        android:text=":"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_Suhu"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="Tinggi Badan"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="2dp"
+                                        android:text=":"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_TinggiBadan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="Kesadaran"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="2dp"
+                                        android:text=":"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_Kesadaran"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:maxLines="1"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="Nadi"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="2dp"
+                                        android:text=":"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_Nadi"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="Pernafasan"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="2dp"
+                                        android:text=":"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_Pernafasan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="Berat Badan"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="2dp"
+                                        android:text=":"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_Berat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/backgroundDarkGrey"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_marginVertical="7dp"
+                        app:cardCornerRadius="5dp"
+                        android:outlineAmbientShadowColor="@color/birufigma"
+                        android:outlineSpotShadowColor="@color/birufigma"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:drawablePadding="5dp"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:text="TINDAKAN"
+                            android:textStyle="bold"/>
+                    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rc_tindakan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:scrollIndicators="right"
+                            android:scrollbars="vertical"
+                            android:scrollbarStyle="insideOverlay"
+                            android:overScrollMode="always"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/backgroundDarkGrey"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_marginVertical="7dp"
+                        app:cardCornerRadius="5dp"
+                        android:outlineAmbientShadowColor="@color/birufigma"
+                        android:outlineSpotShadowColor="@color/birufigma"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:text="DIAGNOSA AKHIR"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rc_icd10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:scrollIndicators="right"
+                            android:scrollbars="vertical"
+                            android:scrollbarStyle="insideOverlay"
+                            android:overScrollMode="always"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="@color/backgroundDarkGrey"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_marginHorizontal="6dp"
+                            android:layout_marginVertical="7dp"
+                            app:cardCornerRadius="5dp"
+                            android:outlineAmbientShadowColor="@color/birufigma"
+                            android:outlineSpotShadowColor="@color/birufigma"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/bariol_bold"
+                                android:paddingVertical="3dp"
+                                android:paddingLeft="13dp"
+                                android:paddingRight="8dp"
+                                android:text="RESEP DOKTER"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:id="@+id/ly_print"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginEnd="-5dp"
+                            android:gravity="right">
+                            <LinearLayout
+                                android:onClick="CetakResep"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:background="@drawable/bg_rounded_white"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/btn_printresep"
+                                    android:onClick="CetakResep"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:src="@drawable/ic_print_blue_20"
+                                    android:padding="15dp"
+                                    android:clickable="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/txt_null_resep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Tidak ada data"
+                        android:visibility="gone"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rc_resepobat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:scrollbarStyle="insideOverlay"
+                        android:overScrollMode="always"
+                        android:scrollIndicators="bottom"
+                        android:scrollbars="horizontal" />
+
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:id="@+id/ly_null_lab"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Tidak ada data Laboratorium"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/icon_attention"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ly_hasil_lab"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_rectangle_greyborder">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="5dp"
+                        android:outlineAmbientShadowColor="@color/birufigma"
+                        android:outlineSpotShadowColor="@color/birufigma"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:text="LABORATORIUM"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rc_laboratorium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:scrollIndicators="right"
+                        android:scrollbars="vertical"
+                        android:scrollbarStyle="insideOverlay"
+                        android:overScrollMode="always"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_null_rad"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Tidak ada data Radiologi"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/icon_attention"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ly_hasil_rad"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_rectangle_greyborder">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="5dp"
+                        android:outlineAmbientShadowColor="@color/birufigma"
+                        android:outlineSpotShadowColor="@color/birufigma"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:text="RADIOLOGI"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rc_radiologi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollIndicators="right"
+                            android:scrollbars="vertical"
+                            android:scrollbarStyle="insideOverlay"
+                            android:overScrollMode="always"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/transparan"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@drawable/bg_rectangle_gradient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/img_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/confirm_daftar" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/pg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_daftar"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_info_success"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt1"
+                android:fontFamily="@font/bariol_bold"
+                android:padding="10dp"
+                android:text="Jadwal Periksa Berhasil Di Booking"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_oke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/bg_rounded_white"
+                android:paddingStart="30dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="7dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="7dp"
+                android:text="Oke"
+                android:textColor="@color/birufigma"
+                android:textSize="20sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
