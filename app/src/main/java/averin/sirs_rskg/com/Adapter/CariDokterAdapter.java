@@ -82,7 +82,7 @@ public class CariDokterAdapter extends BaseAdapter {
 
         txt_namaDokter.setText(list.get(position).getNama_dokter());
         txt_JenisPoli.setText(list.get(position).getBagian());
-        img_Dokter.setImageResource(R.drawable.logo_dmedis);
+        img_Dokter.setImageResource(R.drawable.logo_rskg);
         txt_kddokter.setText(list.get(position).getKode_dokter());
         txt_idnyadokter.setText(list.get(position).getIdnya_dokter());
         txt_kdbag.setText(list.get(position).getKode_bag());

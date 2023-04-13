@@ -56,7 +56,7 @@ public class KlinikAdapter extends RecyclerView.Adapter<KlinikAdapter.KlinikView
         holder.urlLogo.setText(list.get(position).getLogo_klinik());
         urlGIF = holder.urlLogo.getText().toString();
         if (urlGIF.equals("null") || urlGIF.equals("")) {
-            holder.img_Klinik.setImageResource(R.drawable.sirs);
+            holder.img_Klinik.setImageResource(R.drawable.logo_rskg);
         } else {
             Glide.with(context).load(urlGIF).into(holder.img_Klinik);
         }

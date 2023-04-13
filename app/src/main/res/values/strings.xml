@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Pluit Care</string>
+    <string name="app_name">RSKG Care</string>
     <string name="title_activity_info_dmedis">InfoDmedis</string>
     <string name="labelLogin">Registrasi Online Klinik Averin Medika</string>
     <string name="ket_login">Anda Belum Terdaftar atau Login di Aplikasi D-Medis</string>
@@ -41,14 +41,9 @@
         <item>BPJS</item>
         <item>Karyawan Klinik</item>
     </string-array>
-    <string-array name="pilihTipeSearch">
-        <item>Klinik</item>
-        <item>Dokter</item>
-    </string-array>
-    <string-array name="hasiltipePilih">
-        <item>-- Pilih Dokter --</item>
-        <item>-- Pilih Klinik --</item>
-    </string-array>
+<string name="info_hemo">
+    Hemodialisia adalah perawatan untuk menyaring limbah dan air dari darah. Hemodialisis membantu mengontrol tekanan darah dan menyeimbangkan mineral penting, seperti kalium, natrium, dan kalsium, dalam darah. Hemodialisis dapat membantu mengembalikan kualitas hidup, tetapi terapi ini bukan obat untuk menyembuhkan gagal ginjal.
+</string>
     <string name="title_activity_regist_poli">RegistPoli</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

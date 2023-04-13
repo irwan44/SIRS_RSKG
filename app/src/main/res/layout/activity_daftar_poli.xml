@@ -265,7 +265,6 @@
                                     android:src="@drawable/icon_user" />
 
                                 <com.google.android.material.textfield.TextInputLayout
-                                    android:theme="@style/TextInputLayoutAppearance"
                                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                     app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:layout_width="330dp"
@@ -287,30 +286,6 @@
                                         android:inputType="text" />
                                 </com.google.android.material.textfield.TextInputLayout>
                             </androidx.cardview.widget.CardView>
-<!--                            <com.google.android.material.textfield.TextInputLayout-->
-<!--                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-<!--                                android:layout_width="match_parent"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:layout_gravity="center"-->
-<!--                                android:layout_marginTop="10dp"-->
-<!--                                android:layout_marginHorizontal="15dp"-->
-<!--                                app:boxCornerRadiusBottomEnd="5dp"-->
-<!--                                app:hintTextColor="@color/black"-->
-<!--                                app:boxCornerRadiusBottomStart="5dp"-->
-<!--                                app:boxCornerRadiusTopEnd="5dp"-->
-<!--                                app:boxCornerRadiusTopStart="5dp"-->
-<!--                                app:startIconContentDescription="NIK Pasien">-->
-
-<!--                                <com.google.android.material.textfield.TextInputEditText-->
-<!--                                    android:id="@+id/txt_namaPasien"-->
-<!--                                    android:layout_width="match_parent"-->
-<!--                                    android:layout_height="wrap_content"-->
-<!--                                    android:fontFamily="@font/bariol_bold"-->
-<!--                                    android:textColorHint="@color/black"-->
-<!--                                    android:hint="Nama Pasien"-->
-<!--                                    android:inputType="number" />-->
-<!--                            </com.google.android.material.textfield.TextInputLayout>-->
-
 
                             <View
                                 android:layout_width="match_parent"
@@ -319,18 +294,6 @@
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="8dp" />
-
-<!--                            <TextView-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:textStyle="bold"-->
-<!--                                android:layout_marginLeft="15dp"-->
-<!--                                android:fontFamily="@font/bariol_bold"-->
-<!--                                android:layout_marginBottom="1dp"-->
-<!--                                android:text="Pilih Jadwal Pengambilan Antrian"/>-->
-
-
-<!--                            <include layout="@layout/activity_list_jadwal_dokter"/>-->
 
                             <TextView
                                 android:layout_width="170dp"
@@ -363,7 +326,6 @@
                                         android:src="@drawable/calendar" />
 
                                     <com.google.android.material.textfield.TextInputLayout
-                                        android:theme="@style/TextInputLayoutAppearance"
                                         android:id="@+id/edt_tgllahir"
                                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                         android:layout_width="153dp"
@@ -444,7 +406,6 @@
                                     android:src="@drawable/daftarantrian_2" />
 
                                 <com.google.android.material.textfield.TextInputLayout
-                                    android:theme="@style/TextInputLayoutAppearance"
                                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                     app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
                                     android:layout_width="330dp"

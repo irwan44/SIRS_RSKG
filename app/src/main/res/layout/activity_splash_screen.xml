@@ -18,27 +18,17 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bariol_bold"
-            android:translationY="60dp"
-            android:text="Pluit Care"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:textStyle="bold" />
         <ImageView
             android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/hospital_building" />
         <ImageView
-            android:layout_width="67dp"
-            android:layout_height="67dp"
-            android:src="@drawable/logo_rs_pluit"
-            android:translationX="3.5dp"
-            android:translationY="-305dp"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/image"/>
     </LinearLayout>
 
     <ProgressBar
@@ -48,5 +38,5 @@
         android:layout_below="@+id/lay1"
         android:layout_gravity="center"
         android:indeterminateTint="@color/birufigma"
-        android:translationY="260dp" />
+        android:translationY="170dp" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

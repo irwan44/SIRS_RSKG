@@ -53,7 +53,7 @@ public class KlinikDekatAdapter extends RecyclerView.Adapter<KlinikDekatAdapter.
         holder.urlFotoklinik.setText(list.get(position).getLogo_klinik());
         urlGIF = holder.urlFotoklinik.getText().toString();
         if (urlGIF.equals("null") || urlGIF.equals("")) {
-            holder.img_fotoKlinik.setImageResource(R.drawable.sirs);
+            holder.img_fotoKlinik.setImageResource(R.drawable.logo_rskg);
         } else {
             Glide.with(context).load(urlGIF).into(holder.img_fotoKlinik);
 //            bytIMGKlinik = urlGIF.getBytes(StandardCharsets.UTF_8);

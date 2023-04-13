@@ -53,7 +53,7 @@ public class DokterPoliAdapter extends RecyclerView.Adapter<DokterPoliAdapter.Do
     public void onBindViewHolder(DokterPoliViewHolder holder, int position) {
         holder.txt_namaDokter.setText(list.get(position).getNama_dokter());
         holder.txt_JenisPoli.setText(list.get(position).getBagian());
-        holder.img_Dokter.setImageResource(R.drawable.logo_dmedis);
+        holder.img_Dokter.setImageResource(R.drawable.logo_rskg);
         holder.txt_kddokter.setText(list.get(position).getKode_dokter());
         holder.txt_idnyadokter.setText(list.get(position).getIdnya_dokter());
         holder.txt_kdbag.setText(list.get(position).getKode_bag());

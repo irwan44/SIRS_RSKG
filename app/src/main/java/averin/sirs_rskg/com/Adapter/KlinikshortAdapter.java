@@ -53,7 +53,7 @@ public class KlinikshortAdapter extends RecyclerView.Adapter<KlinikshortAdapter.
         holder.urlLogo.setText(list.get(position).getLogo_klinik());
         String urlGIF = holder.urlLogo.getText().toString();
         if (urlGIF.equals("null") || urlGIF.equals("")) {
-            holder.img_Klinik.setImageResource(R.drawable.sirs);
+            holder.img_Klinik.setImageResource(R.drawable.logo_rskg);
         } else {
             Glide.with(context).load(urlGIF).into(holder.img_Klinik);
         }
@@ -71,7 +71,7 @@ public class KlinikshortAdapter extends RecyclerView.Adapter<KlinikshortAdapter.
             img_Klinik = itemView.findViewById(R.id.img_iconKlinik);
             idk = itemView.findViewById(R.id.idk);
 
-            Glide.with(itemView).load(R.drawable.sirs).into(img_Klinik);
+            Glide.with(itemView).load(R.drawable.logo_rskg).into(img_Klinik);
 
 //            txt_email   = itemView.findViewById(R.id.txt_email);
 //            txt_tlp = itemView.findViewById(R.id.txt_tlp);

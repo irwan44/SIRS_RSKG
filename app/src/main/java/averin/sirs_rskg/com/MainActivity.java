@@ -71,11 +71,11 @@ public class MainActivity extends AppCompatActivity {
     String intruksi = "silahkan datang kembali untuk melakukan pemeriksaan pada dokter terkait" +
             " sesuai janji yang telah dibuat pada pemeriksaan pertama kali";
     ConnectivityManager conMgr;
-    TextView txt_login, txt_namaPasien, txt_noktp, txt_lbl, txt_null_antrian, txt_see_klinikterdekat,
+    TextView txt_login, txt_namaPasien, txt_noktp, txt_lbl, txt_null_antrian, txt_registhemo,
             txt_see_jadwaldokter, txt_namars,txt_alamatrs, txt_registrs, txt_selem;
     CircleImageView fotoPasien;
     ImageButton btn_notif;
-    ImageView img_antrian, img_user, img_mrpasien, img_registrs, img_null_antrian, img_logors;
+    ImageView img_antrian, img_user, img_mrpasien, img_registrs, img_null_antrian, img_regist_hemo;
     CardView cv_null_antrian;
     RelativeLayout txt_null_klinikdekat;
     SharedPreferences sharedpreferences;
@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
         cekToken();
 
         //Dialog expand
-        txt_selem = findViewById(R.id.txt_selem);
+//        txt_selem = findViewById(R.id.txt_selem);
         dial_builder1 = new AlertDialog.Builder(MainActivity.this,R.style.CustomAlertDialog);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ViewGroup viewGroup1 = findViewById(com.google.android.material.R.id.content);
         inflater1 = getLayoutInflater();
@@ -178,12 +178,12 @@ public class MainActivity extends AppCompatActivity {
         dial_builder1.setView(dialogView1);
         dial_login1 = dial_builder1.create();
         dial_login1.setCancelable(true);
-        txt_selem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dial_login1.show();
-            }
-        });
+//        txt_selem.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                dial_login1.show();
+//            }
+//        });
         tutup_dialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -222,10 +222,12 @@ public class MainActivity extends AppCompatActivity {
 
         cd_test                 = findViewById(R.id.ic_test);
         txt_null_antrian        = findViewById(R.id.txt_null_antrian);
+        txt_registhemo          = findViewById(R.id.txt_registhemo);
         img_null_antrian        = findViewById(R.id.img_null_antrian);
         cv_null_antrian         = findViewById(R.id.cv_null_antrian);
         img_antrian             = findViewById(R.id.img_antrian);
         img_user                = findViewById(R.id.img_user);
+        img_regist_hemo         = findViewById(R.id.img_registhemo);
         img_registrs            = findViewById(R.id.img_registrs);
         txt_registrs            = findViewById(R.id.txt_registrs);
 //        gridPoli                = findViewById(R.id.grid_poli);
@@ -266,6 +268,18 @@ public class MainActivity extends AppCompatActivity {
             fotoPasien.setVisibility(View.INVISIBLE);
             txt_noktp.setVisibility(View.GONE);
 
+            img_regist_hemo.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dial_login.show();
+                }
+            });
+            txt_registhemo.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dial_login.show();
+                }
+            });
             img_antrian.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
                     dial_login.show();
@@ -910,8 +924,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, AntrianActivity.class);
         startActivity(i);
     }
-    public void registProvinsi(View view) {
-        Intent i = new Intent(MainActivity.this, RegistbyProvinsi.class);
+    public void RegistHemodialisa(View view) {
+        Intent i = new Intent(MainActivity.this, RegistHemo.class);
+        i.putExtra("kode_rs", "C00003");
         startActivity(i);
     }
 

@@ -75,7 +75,6 @@
                 android:layout_marginEnd="8dp"
                 android:gravity="center"
                 android:fontFamily="@font/bariol_bold"
-                android:src="@drawable/logo_dmedis"
                 android:text="Registrasi Akun"
                 android:textSize="76px"
                 app:layout_constraintEnd_toEndOf="parent"

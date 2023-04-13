@@ -80,7 +80,7 @@
                     android:layout_width="149dp"
                     android:layout_height="57dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/logo_dmedis"
+                    android:src="@drawable/logo_rskg"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"

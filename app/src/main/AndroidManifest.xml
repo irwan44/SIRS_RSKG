@@ -1,160 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="averin.sirs_rskg.com">
+    package="averin.sirs_rskg.com" >
 
-    <uses-permission android:name="android.permission.CAMERA"/>
-<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
-<!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
-<!--    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>-->
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-feature
         android:name="android.hardware.wifi"
-        android:required="true"/>
-<!--    <uses-feature-->
-<!--        android:name="android.hardware.location.gps"-->
-<!--        android:required="true"/>-->
-<!--    <uses-feature-->
-<!--        android:name="android.hardware.location"-->
-<!--        android:required="true"/>-->
+        android:required="true" /> <!-- <uses-feature -->
+    <!-- android:name="android.hardware.location.gps" -->
+    <!-- android:required="true"/> -->
+    <!-- <uses-feature -->
+    <!-- android:name="android.hardware.location" -->
+    <!-- android:required="true"/> -->
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true"/>
+        android:required="true" />
     <uses-feature
         android:name="android.hardware.camera.any"
         android:required="true" />
-    <uses-feature
-        android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-feature
         android:name="android.hardware.camera.flash"
-        android:required="false"/>
+        android:required="false" />
 
     <queries>
         <intent>
-            <action android:name="android.intent.action.VIEW"/>
-            <data android:scheme="https"/>
+            <action android:name="android.intent.action.VIEW" />
+
+            <data android:scheme="https" />
         </intent>
         <intent>
-            <action android:name="android.intent.action.DIAL"/>
-            <data android:scheme="tel"/>
+            <action android:name="android.intent.action.DIAL" />
+
+            <data android:scheme="tel" />
         </intent>
         <intent>
-            <action android:name="android.intent.action.SEND"/>
-            <data android:scheme="*/*"/>
+            <action android:name="android.intent.action.SEND" />
+
+            <data android:scheme="*/*" />
         </intent>
         <intent>
-            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
         </intent>
         <intent>
-            <action android:name="android.intent.action.PICK"/>
-            <data android:scheme="image/*"/>
+            <action android:name="android.intent.action.PICK" />
+
+            <data android:scheme="image/*" />
         </intent>
     </queries>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_lsirs_pluit"
+        android:icon="@mipmap/ic_sirs_rskg_round"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_lsirs_pluit_round"
+        android:roundIcon="@mipmap/ic_sirs_rskg_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.D_Medis"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true" >
         <activity
-            android:name="averin.sirs_rskg.com.list_jadwal_dokter"
-            android:screenOrientation="portrait"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="averin.sirs_rskg.com.popup_selengkapnya"
-            android:screenOrientation="portrait"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="averin.sirs_rskg.com.Activity_popup"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="averin.sirs_rskg.com.ViewJadwalDokter"
-            android:screenOrientation="portrait"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="averin.sirs_rskg.com.NotifActivity"
-            android:screenOrientation="portrait"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="averin.sirs_rskg.com.ViewFotoRad"
-            android:screenOrientation="portrait"
+            android:name=".RegistHemo"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="averin.sirs_rskg.com.WebViewPDF"
-            android:screenOrientation="portrait"
+            android:name=".list_jadwal_dokter"
             android:exported="false"
-            android:theme="@style/Theme.D_Medis.NoActionBar" />
-        <activity
-            android:name="averin.sirs_rskg.com.DetailMR"
-            android:screenOrientation="portrait"
-            android:exported="false"
-            android:theme="@style/Theme.D_Medis.NoActionBar">
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="averin.sirs_rskg.com.PrivyInfo"
+            android:name=".popup_selengkapnya"
             android:exported="false"
-            android:theme="@style/Theme.D_Medis.NoActionBar" />
-        <activity
-            android:name="averin.sirs_rskg.com.list_doctor_shimmer"
-            android:exported="false">
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="averin.sirs_rskg.com.ChangePassword"
+            android:name=".Activity_popup"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ViewJadwalDokter"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NotifActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ViewFotoRad"
+            android:exported="false"
             android:screenOrientation="portrait"
+            android:theme="@style/Theme.D_Medis.NoActionBar" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WebViewPDF"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.D_Medis.NoActionBar" />
+        <activity
+            android:name=".DetailMR"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.D_Medis.NoActionBar" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PrivyInfo"
             android:exported="false"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.listcariDokter"
-            android:screenOrientation="portrait"
+            android:name=".list_doctor_shimmer"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ChangePassword"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.EditPasienLama"
-            android:screenOrientation="portrait"
+            android:name=".listcariDokter"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.DetailKlinik"
-            android:screenOrientation="portrait"
+            android:name=".EditPasienLama"
             android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.D_Medis.NoActionBar" />
+        <activity
+            android:name=".DetailKlinik"
+            android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
 
         <uses-library
@@ -162,78 +172,72 @@
             android:required="false" />
 
         <activity
-            android:name="averin.sirs_rskg.com.AntrianDetail"
-            android:screenOrientation="portrait"
+            android:name=".AntrianDetail"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.ScanQRCode"
-            android:screenOrientation="portrait"
+            android:name=".ScanQRCode"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.DaftarPoli"
-            android:screenOrientation="portrait"
+            android:name=".DaftarPoli"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.RegistbyProvinsi"
-            android:screenOrientation="portrait"
+            android:name=".MRpasienActivity"
             android:exported="false"
-            android:label="@string/title_activity_registby_provinsi"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.MRpasienActivity"
-            android:screenOrientation="portrait"
-            android:exported="false"
-            android:parentActivityName="averin.sirs_rskg.com.MainActivity"
-            android:theme="@style/Theme.D_Medis.NoActionBar" />
-        <activity
-            android:name="averin.sirs_rskg.com.AntrianActivity"
-            android:screenOrientation="portrait"
+            android:name=".AntrianActivity"
             android:exported="false"
             android:label="AntrianActivity"
-            android:parentActivityName="averin.sirs_rskg.com.MainActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.CropImage"
-            android:screenOrientation="portrait"
+            android:name=".CropImage"
             android:exported="false"
-            android:parentActivityName="averin.sirs_rskg.com.MainActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.RegistrasiActivity"
-            android:screenOrientation="portrait"
+            android:name=".RegistrasiActivity"
             android:exported="false"
             android:label="RegistrasiActivity"
-            android:parentActivityName="averin.sirs_rskg.com.LoginActivity"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.RegistLab"
-            android:screenOrientation="portrait"
+            android:name=".RegistLab"
             android:exported="false"
             android:label="@string/title_activity_regist_lab"
-            android:parentActivityName="averin.sirs_rskg.com.RegistPasienLama"
-            android:theme="@style/Theme.D_Medis.NoActionBar" />
-        <activity
-            android:name="averin.sirs_rskg.com.RegistPoli"
+            android:parentActivityName=".RegistPasienLama"
             android:screenOrientation="portrait"
-            android:exported="false"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.RegistPasienLama"
+            android:name=".RegistPoli"
+            android:exported="false"
             android:screenOrientation="portrait"
-            android:exported="false"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.SplashScreen"
+            android:name=".RegistPasienLama"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.D_Medis.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar"
             android:windowSoftInputMode="adjustPan"
-            tools:ignore="RedundantLabel">
+            tools:ignore="RedundantLabel" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -241,17 +245,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="averin.sirs_rskg.com.RegistKlinik"
-            android:screenOrientation="portrait"
+            android:name=".RegistKlinik"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.InfoDmedis"
-            android:screenOrientation="portrait"
+            android:name=".InfoDmedis"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.LoginActivity"
+            android:name=".LoginActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:label="@string/app_name"
@@ -260,14 +264,14 @@
             android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity,RedundantLabel" />
         <activity
-            android:name="averin.sirs_rskg.com.MainActivity"
-            android:screenOrientation="portrait"
+            android:name=".MainActivity"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
-            android:name="averin.sirs_rskg.com.LupaPassword"
-            android:screenOrientation="portrait"
+            android:name=".LupaPassword"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar" />
     </application>
 

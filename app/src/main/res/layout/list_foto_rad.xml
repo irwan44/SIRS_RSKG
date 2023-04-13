@@ -63,7 +63,7 @@
                     android:layout_gravity="center"
                     android:layout_marginVertical="10dp"
                     android:padding="10dp"
-                    android:src="@drawable/logo_dmedis" />
+                    android:src="@drawable/ic_rujuk" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

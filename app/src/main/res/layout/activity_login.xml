@@ -8,14 +8,6 @@
     android:fitsSystemWindows="true"
     tools:context=".LoginActivity">
 
-<!--    <androidx.core.widget.NestedScrollView-->
-<!--        android:id="@+id/nestedScrollView2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:background="@drawable/bg_splash"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        tools:ignore="MissingConstraints">-->
-
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
@@ -31,7 +23,6 @@
                     android:id="@+id/pg_toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:background="@color/transparan"
                     android:minHeight="?attr/actionBarSize"
                     android:theme="?attr/actionBarTheme"
@@ -54,7 +45,7 @@
                             android:fontFamily="@font/bariol_bold"
                             android:gravity="center"
                             android:onClick="SkipLogin"
-                            android:padding="10sp"
+                            android:padding="10dp"
                             android:text="Lewati untuk saat ini"
                             android:textAlignment="center"
                             android:textColor="@color/blue_500"
@@ -67,109 +58,95 @@
                 </com.google.android.material.appbar.AppBarLayout>
 
                 <ImageView
-                    android:id="@+id/textView"
-                    android:layout_width="152dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:fontFamily="@font/bariol_bold"
-                    android:src="@drawable/sirs"
-                    android:visibility="invisible"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/pg_toolbar" />
-
-                <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="210dp"
-                    android:layout_height="190dp"
-                    android:layout_marginTop="120dp"
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
                     android:layout_marginStart="8dp"
+                    android:layout_marginTop="50dp"
                     android:layout_marginEnd="8dp"
                     android:src="@drawable/login"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView"/>
+                    app:layout_constraintTop_toBottomOf="@+id/pg_toolbar" />
 
                 <LinearLayout
+                    android:id="@+id/textInputLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView"
-                    android:id="@+id/textInputLayout2"
-                    android:orientation="vertical">
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:theme="@style/TextInputLayoutAppearance"
-                    android:id="@+id/txt_username1"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="45dp"
-                    android:layout_marginTop="20dp"
-                    android:imeOptions="actionNext"
-                    android:layout_marginEnd="45dp"
-                    android:nextFocusForward="@+id/textInputLayout22"
-                    android:nextFocusDown="@+id/textInputLayout22"
-                    android:contextClickable="true"
-                    android:background="@drawable/bg_txt_username"
-                    android:fontFamily="@font/bariol_bold"
-                    app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
-                    app:endIconMode="clear_text"
-                    app:helperText="Masukkan email / No. HP anda"
-                    app:hintTextColor="@color/birufigma"
+                    android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txt_username"
-                        android:layout_width="245dp"
-                        android:layout_height="72dp"
-                        android:hapticFeedbackEnabled="true"
-                        android:layout_marginLeft="45dp"
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/txt_username1"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="45dp"
+                        android:background="@drawable/bg_txt_username"
+                        android:contextClickable="true"
+                        android:fontFamily="@font/bariol_bold"
                         android:imeOptions="actionNext"
-                        android:background="@android:color/transparent"
-                        android:fontFamily="@font/bariol_bold"
-                        android:hint="Email / No. Telephone"
-                        android:inputType="textEmailAddress">
+                        android:nextFocusDown="@+id/textInputLayout22"
+                        android:nextFocusForward="@+id/textInputLayout22"
+                        app:endIconMode="clear_text"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:hintTextColor="@color/birufigma"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-                    </com.google.android.material.textfield.TextInputEditText>
-                </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/bariol_bold"
+                            android:hapticFeedbackEnabled="true"
+                            android:hint="Email / No. Telephone"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
 
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:theme="@style/TextInputLayoutAppearance"
-                    android:id="@+id/textInputLayout22"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="45dp"
-                    android:contextClickable="true"
-                    android:layout_marginEnd="45dp"
-                    android:background="@drawable/bg_txt_password"
-                    app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
-                    app:hintTextColor="@color/birufigma"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_username1"
-                    app:passwordToggleEnabled="true">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout22"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginEnd="45dp"
+                        android:background="@drawable/bg_txt_password"
+                        android:contextClickable="true"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:hintTextColor="@color/birufigma"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_username1"
+                        app:passwordToggleEnabled="true">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txt_password"
-                        android:layout_width="245dp"
-                        android:layout_height="72dp"
-                        android:layout_marginLeft="35dp"
-                        android:keyboardNavigationCluster="true"
-                        android:imeOptions="flagNoExtractUi|flagNoFullscreen"
-                        android:background="@android:color/transparent"
-                        android:fontFamily="@font/bariol_bold"
-                        app:textInputLayoutFocusedRectEnabled="true"
-                        android:hint="Password"
-                        android:inputType="textPassword">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/bariol_bold"
+                            android:hint="Password"
+                            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+                            android:inputType="textPassword"
+                            android:keyboardNavigationCluster="true"
+                            app:textInputLayoutFocusedRectEnabled="true">
 
-                    </com.google.android.material.textfield.TextInputEditText>
-                </com.google.android.material.textfield.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
                 <ProgressBar
@@ -184,34 +161,33 @@
                     app:layout_constraintStart_toStartOf="parent"
                     tools:ignore="MissingConstraints" />
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="8dp"-->
-<!--                    android:layout_marginTop="24dp"-->
-<!--                    android:layout_marginEnd="8dp"-->
-<!--                    android:fontFamily="@font/bariol_bold"-->
-<!--                    android:text="Lupa Password ?"-->
-<!--                    android:textSize="16dp"-->
-<!--                    android:onClick="LupaPassword"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintHorizontal_bias="0.889"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />-->
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="8dp"-->
+                <!--                    android:layout_marginTop="24dp"-->
+                <!--                    android:layout_marginEnd="8dp"-->
+                <!--                    android:fontFamily="@font/bariol_bold"-->
+                <!--                    android:text="Lupa Password ?"-->
+                <!--                    android:textSize="16dp"-->
+                <!--                    android:onClick="LupaPassword"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.889"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />-->
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/bg_rectangle_gradient2"
                     android:focusable="true"
                     android:fontFamily="@font/bariol_bold"
                     android:foreground="?attr/selectableItemBackground"
-                    android:paddingStart="70dp"
-                    android:paddingEnd="70dp"
-                    android:text="Login"
+                    android:paddingHorizontal="82dp"
+                    android:text="Log in"
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -219,50 +195,59 @@
                     app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
                 <LinearLayout
+                    android:id="@+id/lay_or"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="40dp"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.300"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btn_login">
-
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="35dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="30dp"
                         android:fontFamily="@font/bariol_bold"
                         android:text="Tidak punya akun ?"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.300"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
-
+                        app:layout_constraintHorizontal_bias="0.300"/>
                     <TextView
                         android:id="@+id/registAkun"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="35dp"
-                        android:layout_marginBottom="30dp"
                         android:fontFamily="@font/bariol_bold"
                         android:onClick="RegistrasiAkun"
-                        android:text="Buat Akun Baru"
                         android:padding="5dp"
+                        android:text="Buat Akun Baru"
                         android:textColor="@color/blue_500"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.70"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/btn_login"
                         app:layout_constraintVertical_bias="0.0" />
                 </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_login_by_google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/bg_rectangle_grey"
+                    android:drawableLeft="@drawable/ic_google_svg"
+                    android:focusable="true"
+                    android:fontFamily="@font/bariol_bold"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingHorizontal="12dp"
+                    android:drawablePadding="7dp"
+                    android:text="Sign up with Google"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lay_or" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
