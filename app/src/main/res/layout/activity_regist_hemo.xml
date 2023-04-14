@@ -325,7 +325,7 @@
                             android:orientation="vertical">
 
                             <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/txt_username1"
+                                android:id="@+id/jnsPx1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
@@ -342,7 +342,7 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/imageView">
                                 <com.google.android.material.textfield.TextInputEditText
-                                    android:id="@+id/txt_username"
+                                    android:id="@+id/txt_jnspx1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="40dp"
@@ -356,6 +356,36 @@
                                 </com.google.android.material.textfield.TextInputEditText>
                             </com.google.android.material.textfield.TextInputLayout>
 
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginHorizontal="15dp"
+                                android:background="@color/transparan"
+                                android:focusable="false"
+                                app:hintTextColor="@color/birufigma"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spn_asuransi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_row="9"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="0.5"
+                                    android:padding="10dp"
+                                    android:tooltipText="Dokter Penanggung Jawab"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginEnd="20dp"
+                                    app:boxCornerRadiusBottomEnd="20dp"
+                                    app:boxCornerRadiusBottomStart="20dp"
+                                    app:boxCornerRadiusTopEnd="20dp"
+                                    app:boxCornerRadiusTopStart="20dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
                             <RadioGroup
                                 android:id="@+id/rg_bpjs"
                                 android:layout_width="match_parent"
@@ -363,19 +393,21 @@
                                 android:layout_marginHorizontal="20dp"
                                 android:orientation="horizontal">
                                 <RadioButton
+                                    android:id="@+id/rbrujuk"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginHorizontal="10dp"
                                     android:text="Rujukan"/>
                                 <RadioButton
+                                    android:id="@+id/rbkontrol"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginHorizontal="10dp"
-                                    android:text="Kontrol"
+                                    android:text="Kontrol"/>
                             </RadioGroup>
 
                             <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/txt_jnspx1"
+                                android:id="@+id/jnspx2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
@@ -400,7 +432,7 @@
                                     android:background="@android:color/transparent"
                                     android:fontFamily="@font/bariol_bold"
                                     android:hapticFeedbackEnabled="true"
-                                    android:hint="No Polis"
+                                    android:hint="No Rujukan"
                                     android:imeOptions="actionNext"
                                     android:inputType="textEmailAddress">
 
