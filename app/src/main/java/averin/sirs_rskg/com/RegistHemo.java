@@ -2,6 +2,7 @@ package averin.sirs_rskg.com;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -68,7 +69,7 @@ public class RegistHemo extends AppCompatActivity {
     ImageButton imgbtn_home;
     DateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd");
     DateFormat inputFormat = new SimpleDateFormat("dd-LLL-yyyy");
-
+    CardView cr_JnsPx;
     String[] jnsPasien = new String[]{"Umum", "BPJS", "Asuransi/Perusahaan", "Karyawan"};
     String[] waktukunj = new String[]{"Pagi", "Siang"};
     AutoCompleteTextView spn_jnsPasien,spn_waktu_kunj;
@@ -110,6 +111,7 @@ public class RegistHemo extends AppCompatActivity {
         rb_kontrol     = findViewById(R.id.rbkontrol);
         spn_jnsPasien  = findViewById(R.id.spn_jnsPasien);
         spn_waktu_kunj = findViewById(R.id.spn_waktu);
+        cr_JnsPx       = findViewById(R.id.cr_jnsPx);
         imgbtn_home    = findViewById(R.id.imgbtn_home);
         btn_kirim      = findViewById(R.id.btn_kirim);
         spn_dokter     = findViewById(R.id.spn_dokter);
@@ -198,8 +200,43 @@ public class RegistHemo extends AppCompatActivity {
         spn_jnsPasien.setAdapter(AdaptJnsPasien);
         spn_waktu_kunj.setAdapter(AdaptSpnWaktu);
         jenispx = spn_jnsPasien.getText().toString();
-        if()
 
+        if(jenispx.equals("BPJS")){
+            wrapSpinner.setVisibility(View.GONE);
+            spn_asuransi.setVisibility(View.GONE);
+            wrapjnsPx1.setVisibility(View.VISIBLE);
+            wrapjnsPx2.setVisibility(View.VISIBLE);
+            edt_jnsPx1.setVisibility(View.VISIBLE);
+            edt_jnsPx2.setVisibility(View.VISIBLE);
+            rg_bpjs.setVisibility(View.VISIBLE);
+            edt_jnsPx1.setHint("No Kartu BPJS");
+            rg_bpjs.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+            {
+                public void onCheckedChanged(RadioGroup group, int checkedId) {
+                    switch(checkedId){
+                        case R.id.rbrujuk:
+                            edt_jnsPx2.setHint("No Rujukan");
+                            break;
+                        case R.id.rbkontrol:
+                            edt_jnsPx2.setHint("No Surat Kontrol");
+                            // do operations specific to this selection
+                            break;
+                    }
+                }
+            });
+        }else if(jenispx.equals("Asuransi/Perusahaan")){
+            wrapSpinner.setVisibility(View.VISIBLE);
+            spn_asuransi.setVisibility(View.VISIBLE);
+            wrapjnsPx1.setVisibility(View.GONE);
+            wrapjnsPx2.setVisibility(View.GONE);
+            edt_jnsPx1.setVisibility(View.GONE);
+            edt_jnsPx2.setVisibility(View.GONE);
+            rg_bpjs.setVisibility(View.GONE);
+        }else if(jenispx.equals("Umum")) {
+            cr_JnsPx.setVisibility(View.GONE);
+        }else if(jenispx.equals("Karyawan")){
+            cr_JnsPx.setVisibility(View.GONE);
+        }
 
         edt_tglPeriksa.setOnClickListener(new View.OnClickListener() {
             @Override
