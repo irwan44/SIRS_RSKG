@@ -24,9 +24,13 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputLayout;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,8 +56,12 @@ import averin.sirs_rskg.com.Ui.AppController;
 public class RegistHemo extends AppCompatActivity {
 
     TextView txt_info_success, txt_info_failed;
-    EditText edt_tglPeriksa, edt_namaPasien, edt_jnsPasien;
-    String val_token, ktpPasien, flagPesan, urlFoto, kd_dokter, id_dokter, nm_dokter, kd_bag, bagian, nm_klinik, kd_klinik, durasi, jdwl_periksa, tgl_now,tglKonvert;
+    TextInputLayout wrapjnsPx1, wrapjnsPx2, wrapSpinner;
+    EditText edt_tglPeriksa, edt_namaPasien, edt_jnsPx1, edt_jnsPx2;
+    RadioGroup rg_bpjs;
+    RadioButton rb_rujuk, rb_kontrol;
+    String val_token, ktpPasien, flagPesan, urlFoto, kd_dokter, id_dokter, nm_dokter,
+            kd_bag, bagian, nm_klinik, kd_klinik, durasi, jdwl_periksa, tgl_now,tglKonvert, jenispx;
     ConnectivityManager conMgr;
     Button btn_kirim, btn_ok_failed, btn_ok_success;
     Intent Antrian;
@@ -65,7 +73,7 @@ public class RegistHemo extends AppCompatActivity {
     String[] waktukunj = new String[]{"Pagi", "Siang"};
     AutoCompleteTextView spn_jnsPasien,spn_waktu_kunj;
     ProgressDialog pDialog;
-    Spinner spn_dokter;
+    Spinner spn_dokter, spn_asuransi;
     SpinnerAdapter adapter;
     List<isiSpinner> listisian = new ArrayList<isiSpinner>();
 
@@ -92,11 +100,20 @@ public class RegistHemo extends AppCompatActivity {
 
         edt_namaPasien = findViewById(R.id.txt_namaPasien);
         edt_tglPeriksa = findViewById(R.id.tglPeriksa);
+        edt_jnsPx1     = findViewById(R.id.txt_jnspx1);
+        edt_jnsPx2     = findViewById(R.id.txt_jnspx2);
+        wrapjnsPx1     = findViewById(R.id.wrapjnspx1);
+        wrapjnsPx2     = findViewById(R.id.wrapjnspx2);
+        wrapSpinner    = findViewById(R.id.wrapSpinner);
+        rg_bpjs        = findViewById(R.id.rg_bpjs);
+        rb_rujuk       = findViewById(R.id.rbrujuk);
+        rb_kontrol     = findViewById(R.id.rbkontrol);
         spn_jnsPasien  = findViewById(R.id.spn_jnsPasien);
         spn_waktu_kunj = findViewById(R.id.spn_waktu);
         imgbtn_home    = findViewById(R.id.imgbtn_home);
         btn_kirim      = findViewById(R.id.btn_kirim);
         spn_dokter     = findViewById(R.id.spn_dokter);
+        spn_asuransi   = findViewById(R.id.spn_asuransi);
         edt_namaPasien.setEnabled(false);
         getDokterPenunjang();
 
@@ -180,6 +197,9 @@ public class RegistHemo extends AppCompatActivity {
         ArrayAdapter<String> AdaptSpnWaktu = new ArrayAdapter<>(this, R.layout.dialog_spinner, waktukunj);
         spn_jnsPasien.setAdapter(AdaptJnsPasien);
         spn_waktu_kunj.setAdapter(AdaptSpnWaktu);
+        jenispx = spn_jnsPasien.getText().toString();
+        if()
+
 
         edt_tglPeriksa.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -325,7 +325,7 @@
                             android:orientation="vertical">
 
                             <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/jnsPx1"
+                                android:id="@+id/wrapjnspx1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
@@ -357,6 +357,7 @@
                             </com.google.android.material.textfield.TextInputLayout>
 
                             <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/wrapSpinner"
                                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
@@ -407,7 +408,7 @@
                             </RadioGroup>
 
                             <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/jnspx2"
+                                android:id="@+id/wrapjnspx2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
