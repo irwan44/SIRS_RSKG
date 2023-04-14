@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="averin.sirs_rskg.com" >
+    package="averin.sirs_rskg.com">
 
     <uses-permission android:name="android.permission.CAMERA" /> <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> -->
     <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> -->
@@ -63,7 +63,16 @@
         android:roundIcon="@mipmap/ic_sirs_rskg_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.D_Medis"
-        android:usesCleartextTraffic="true" >
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".AntrianRegistrasi"
+            android:exported="false"
+            android:label="@string/title_activity_antrian_registrasi"
+            android:theme="@style/Theme.D_Medis.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".RegistHemo"
             android:exported="false"
@@ -76,7 +85,7 @@
         <activity
             android:name=".list_jadwal_dokter"
             android:exported="false"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -84,14 +93,14 @@
         <activity
             android:name=".popup_selengkapnya"
             android:exported="false"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".Activity_popup"
-            android:exported="false" >
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -99,7 +108,7 @@
         <activity
             android:name=".ViewJadwalDokter"
             android:exported="false"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -107,7 +116,7 @@
         <activity
             android:name=".NotifActivity"
             android:exported="false"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -116,7 +125,7 @@
             android:name=".ViewFotoRad"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.D_Medis.NoActionBar" >
+            android:theme="@style/Theme.D_Medis.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -130,7 +139,7 @@
             android:name=".DetailMR"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.D_Medis.NoActionBar" >
+            android:theme="@style/Theme.D_Medis.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -141,7 +150,7 @@
             android:theme="@style/Theme.D_Medis.NoActionBar" />
         <activity
             android:name=".list_doctor_shimmer"
-            android:exported="false" >
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -237,7 +246,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.D_Medis.NoActionBar"
             android:windowSoftInputMode="adjustPan"
-            tools:ignore="RedundantLabel" >
+            tools:ignore="RedundantLabel">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

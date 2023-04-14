@@ -921,7 +921,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
     public void Antrian(View view) {
-        Intent i = new Intent(MainActivity.this, AntrianActivity.class);
+        Intent i = new Intent(MainActivity.this, AntrianRegistrasi.class);
         startActivity(i);
     }
     public void RegistHemodialisa(View view) {

@@ -41,7 +41,7 @@
         <item>BPJS</item>
         <item>Karyawan Klinik</item>
     </string-array>
-<string name="info_hemo">
+    <string name="info_hemo">
     Hemodialisia adalah perawatan untuk menyaring limbah dan air dari darah. Hemodialisis membantu mengontrol tekanan darah dan menyeimbangkan mineral penting, seperti kalium, natrium, dan kalsium, dalam darah. Hemodialisis dapat membantu mengembalikan kualitas hidup, tetapi terapi ini bukan obat untuk menyembuhkan gagal ginjal.
 </string>
     <string name="title_activity_regist_poli">RegistPoli</string>
@@ -96,4 +96,5 @@
     <string name="image_view_item_transform_content_description">Represents an image view in the
         item
     </string>
+    <string name="title_activity_antrian_registrasi">AntrianRegistrasi</string>
 </resources>

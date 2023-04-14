@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgssss"
+    android:background="@color/birufigma"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true">
 
@@ -309,6 +309,104 @@
 
                                 </com.google.android.material.textfield.TextInputLayout>
                             </androidx.cardview.widget.CardView>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="16dp"
+                        app:cardBackgroundColor="@color/backgroundDarkGrey"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txt_username1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:background="@drawable/bg_rectangle_greyborder"
+                                android:contextClickable="true"
+                                android:fontFamily="@font/bariol_bold"
+                                android:imeOptions="actionNext"
+                                android:nextFocusDown="@+id/textInputLayout22"
+                                android:nextFocusForward="@+id/textInputLayout22"
+                                app:endIconMode="clear_text"
+                                app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                                app:hintTextColor="@color/birufigma"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txt_username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="40dp"
+                                    android:layout_marginEnd="30dp"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/bariol_bold"
+                                    android:hapticFeedbackEnabled="true"
+                                    android:hint="No Polis"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textEmailAddress">
+                                </com.google.android.material.textfield.TextInputEditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <RadioGroup
+                                android:id="@+id/rg_bpjs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:orientation="horizontal">
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:text="Rujukan"/>
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:text="Kontrol"
+                            </RadioGroup>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txt_jnspx1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:background="@drawable/bg_rectangle_greyborder"
+                                android:contextClickable="true"
+                                android:fontFamily="@font/bariol_bold"
+                                android:imeOptions="actionNext"
+                                android:nextFocusDown="@+id/textInputLayout22"
+                                android:nextFocusForward="@+id/textInputLayout22"
+                                app:endIconMode="clear_text"
+                                app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                                app:hintTextColor="@color/birufigma"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txt_jnspx2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="30dp"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/bariol_bold"
+                                    android:hapticFeedbackEnabled="true"
+                                    android:hint="No Polis"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textEmailAddress">
+
+                                </com.google.android.material.textfield.TextInputEditText>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
                     <View

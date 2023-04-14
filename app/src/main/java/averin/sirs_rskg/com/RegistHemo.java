@@ -291,7 +291,6 @@ public class RegistHemo extends AppCompatActivity {
 
                             item.setId(jr.getString("kode_dokter"));
                             item.setKet(jr.getString("nama_dokter"));
-                            edt_jnsPasien.setText(jr.getString("nama_dokter"));
                             listisian.add(item);
                         }
                         adapter.notifyDataSetChanged();
