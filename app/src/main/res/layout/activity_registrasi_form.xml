@@ -496,7 +496,6 @@
                                 android:layout_height="match_parent"
                                 android:background="@android:color/transparent"
                                 android:fontFamily="@font/bariol_bold"
-                                android:hint="Alergi"
                                 android:inputType="text"/>
                         </com.google.android.material.textfield.TextInputLayout>
                     </androidx.cardview.widget.CardView>
@@ -660,7 +659,6 @@
                                 android:layout_height="match_parent"
                                 android:background="@android:color/transparent"
                                 android:fontFamily="@font/bariol_bold"
-                                android:hint="Confirm Password"
                                 android:inputType="textPassword"/>
                         </com.google.android.material.textfield.TextInputLayout>
                     </androidx.cardview.widget.CardView>
@@ -698,7 +696,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="100dp">
+                android:layout_height="500dp">
 
             </View>
         </LinearLayout>
