@@ -65,6 +65,13 @@
         android:theme="@style/Theme.D_Medis"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".test_layout"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AntrianRegistrasi"
             android:exported="false"
             android:label="@string/title_activity_antrian_registrasi"

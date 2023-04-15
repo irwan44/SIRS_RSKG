@@ -30,6 +30,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.AnimationTypes;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.textfield.TextInputLayout;
 
 import org.json.JSONArray;
@@ -97,6 +101,16 @@ public class RegistHemo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regist_hemo);
+
+        ImageSlider imgSlider = findViewById(R.id.image_slider);
+        List<SlideModel> slideModels = new ArrayList<>();
+
+        slideModels.add(new SlideModel("https://www.rshabibie.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHD.293cc9fd.jpg&w=3840&q=75", ScaleTypes.FIT));
+        slideModels.add(new SlideModel("https://www.rshabibie.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPHD.d45cb866.jpg&w=3840&q=75", ScaleTypes.FIT));
+        slideModels.add(new SlideModel("https://www.rshabibie.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPHDAnak.b55a7369.jpg&w=3840&q=75", ScaleTypes.FIT));
+
+        imgSlider.setImageList(slideModels);
+        imgSlider.setSlideAnimation(AnimationTypes.ZOOM_OUT);
 
         edt_namaPasien = findViewById(R.id.txt_namaPasien);
         edt_tglPeriksa = findViewById(R.id.tglPeriksa);
@@ -198,7 +212,7 @@ public class RegistHemo extends AppCompatActivity {
         spn_jnsPasien.setAdapter(AdaptJnsPasien);
         spn_waktu_kunj.setAdapter(AdaptSpnWaktu);
         jenispx = spn_jnsPasien.getText().toString();
-        if()
+
 
 
         edt_tglPeriksa.setOnClickListener(new View.OnClickListener() {

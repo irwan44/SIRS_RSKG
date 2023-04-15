@@ -42,7 +42,7 @@
         <item>Karyawan Klinik</item>
     </string-array>
     <string name="info_hemo">
-    Hemodialisia adalah perawatan untuk menyaring limbah dan air dari darah. Hemodialisis membantu mengontrol tekanan darah dan menyeimbangkan mineral penting, seperti kalium, natrium, dan kalsium, dalam darah. Hemodialisis dapat membantu mengembalikan kualitas hidup, tetapi terapi ini bukan obat untuk menyembuhkan gagal ginjal.
+    Hemodialisis adalah perawatan untuk menyaring limbah dan air dari darah. Hemodialisis membantu mengontrol tekanan darah dan menyeimbangkan mineral penting, seperti kalium, natrium, dan kalsium, dalam darah. Hemodialisis dapat membantu mengembalikan kualitas hidup, tetapi terapi ini bukan obat untuk menyembuhkan gagal ginjal.
 </string>
     <string name="title_activity_regist_poli">RegistPoli</string>
     <!-- Strings used for fragments for navigation -->

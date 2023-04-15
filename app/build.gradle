@@ -3,19 +3,10 @@ plugins {
 }
 
 android {
-    signingConfigs {
-        debug {
-            storeFile file('C:\\Dev Android\\Keystore_averin\\Averin_dev.jks')
-            storePassword '48family'
-            keyAlias 'Averin2023'
-            keyPassword '48family'
-        }
-    }
+
     compileSdk 33
     lintOptions {
         checkReleaseBuilds false
-        // Or, if you prefer, you can continue to check for errors in release builds,
-        // but continue the build even when errors are found:
         abortOnError false
     }
 
@@ -105,6 +96,7 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.1.1'
     implementation "io.reactivex.rxjava2:rxjava:2.2.19"
     implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.2'
     //QR Code
     implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
 
