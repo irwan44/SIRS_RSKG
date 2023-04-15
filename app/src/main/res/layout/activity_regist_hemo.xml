@@ -109,8 +109,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="300dp"
                             app:iss_auto_cycle="true"
-                            app:iss_period="1000"
-                            app:iss_delay="1000"
+                            app:iss_period="5000"
+                            app:iss_delay="5000"
                             app:iss_text_align="CENTER"/>
                     </RelativeLayout>
 
@@ -129,7 +129,7 @@
                             android:layout_marginHorizontal="10dp"
                             android:layout_marginBottom="5dp"
                             android:fontFamily="@font/bariol_regular"
-                            android:text="Informasi Hemodialisis kontol"
+                            android:text="Informasi Hemodialisis"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold" />

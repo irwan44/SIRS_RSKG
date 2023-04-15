@@ -4,15 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layawal"
     android:background="@color/backgroundDarkGrey"
-    tools:context=".test_layout">
+    tools:context=".RegistPasienLama">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/transparan"
+        app:cardElevation="0dp"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/pg_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparan"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:navigationIcon="@drawable/arrow_left"/>
+
+                <TextView
+                    android:id="@+id/textilang1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableRight="@drawable/icon_right2"
+                    android:fontFamily="@font/bariol_bold"
+                    android:gravity="center"
+                    android:onClick="SkipLogin"
+                    android:padding="10dp"
+                    android:text="Back to Login"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue_500"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.183"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_home"
+                    android:layout_width="39dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/transparan"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_home"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.158"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
@@ -20,419 +86,50 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/imageView5"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_height="134dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:src="@drawable/image">
 
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="10dp"
+                app:cardElevation="10dp"
+                android:layout_marginTop="10dp"
+                android:outlineAmbientShadowColor="@color/birufigma"
+                android:outlineSpotShadowColor="@color/birufigma"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="wrap_content">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <com.google.android.material.appbar.CollapsingToolbarLayout
-                        android:id="@+id/pg_toolbar"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/transparan"
-                        tools:ignore="MissingConstraints">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="55dp">
-
-                            <!--                <TextView-->
-                            <!--                    android:id="@+id/textView"-->
-                            <!--                    android:layout_width="match_parent"-->
-                            <!--                    android:layout_height="match_parent"-->
-                            <!--                    android:fontFamily="@font/bariol_bold"-->
-                            <!--                    android:gravity="center"-->
-                            <!--                    android:text="Registrasi RS"-->
-                            <!--                    android:textSize="20dp"-->
-                            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-                            <!--                    app:layout_constraintStart_toStartOf="parent">-->
-
-                            <!--                </TextView>-->
-
-                            <androidx.appcompat.widget.Toolbar
-                                android:id="@+id/toolbar"
-                                android:layout_width="40dp"
-                                android:layout_height="35dp"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="19dp"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:navigationIcon="@drawable/arrow_left"
-                                tools:ignore="TouchTargetSizeCheck">
-
-                            </androidx.appcompat.widget.Toolbar>
-
-                            <ImageButton
-                                android:id="@+id/imgbtn_home"
-                                android:layout_width="39dp"
-                                android:layout_height="31dp"
-                                android:layout_gravity="center_vertical"
-                                android:layout_marginTop="20dp"
-                                android:background="@color/transparan"
-                                android:padding="5dp"
-                                android:src="@drawable/icon_home"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.158"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </com.google.android.material.appbar.CollapsingToolbarLayout>
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="220dp"
-                        android:src="@drawable/blood_donation_pana" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView5">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_marginBottom="5dp"
-                            android:fontFamily="@font/bariol_regular"
-                            android:text="Informasi Hemodialisa"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/txt_info_hemo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:fontFamily="@font/bariol_regular"
-                            android:text="@string/info_hemo"
-                            android:textColor="@color/black"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_marginVertical="10dp"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="15dp"
-                        android:fontFamily="@font/bariol_bold"
-                        android:text="Pemesanan Hemodialisa"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="15dp"
-                        android:layout_marginTop="10dp"
-                        android:drawableLeft="@drawable/ic_baseline_circle_24"
-                        android:drawablePadding="10dp"
-                        android:fontFamily="@font/bariol_bold"
-                        android:text="Nama Pasien :" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="15dp"
-                        app:cardBackgroundColor="@color/backgroundDarkGrey"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="0dp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="60dp"
-                            android:layout_marginLeft="10dp"
-                            android:src="@drawable/icon_user" />
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="30dp"
-                            app:boxCornerRadiusBottomEnd="20dp"
-                            app:hintEnabled="false"
-                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
-                            app:hintTextColor="@color/birufigma"
-                            app:startIconContentDescription="Nama Pasien">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/txt_namaPasien"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@color/transparan"
-                                android:fontFamily="@font/bariol_bold"
-                                android:inputType="text"
-                                app:boxBackgroundColor="@color/white" />
-                        </com.google.android.material.textfield.TextInputLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="16dp" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="15dp"
-                        android:drawableLeft="@drawable/ic_baseline_circle_24"
-                        android:drawablePadding="10dp"
-                        android:fontFamily="@font/bariol_bold"
-                        android:text="Jenis Pasien :" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="15dp"
-                        app:cardBackgroundColor="@color/backgroundDarkGrey"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="0dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            app:cardBackgroundColor="@color/backgroundDarkGrey"
-                            app:cardCornerRadius="10dp"
-                            app:cardElevation="0dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="60dp"
-                                android:layout_marginLeft="10dp"
-                                android:src="@drawable/ic_edit_profile" />
-
-                            <com.google.android.material.textfield.TextInputLayout
-                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginHorizontal="15dp"
-                                android:background="@color/transparan"
-                                android:focusable="false"
-                                app:hintTextColor="@color/birufigma"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent">
-
-                                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-                                    android:id="@+id/spn_jnsPasien"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="30dp"
-                                    android:background="@color/transparan"
-                                    android:focusable="false"
-                                    android:fontFamily="@font/bariol_bold"
-                                    android:inputType="none"
-                                    tools:ignore="LabelFor" />
-
-                            </com.google.android.material.textfield.TextInputLayout>
-                        </androidx.cardview.widget.CardView>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="15dp"
-                        android:layout_marginTop="10dp"
-                        android:drawableLeft="@drawable/ic_baseline_circle_24"
-                        android:drawablePadding="10dp"
-                        android:fontFamily="@font/bariol_bold"
-                        android:text="No Poli :" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="15dp"
-                        app:cardBackgroundColor="@color/backgroundDarkGrey"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="0dp">
-
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/wrapjnspx1"
-                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            app:boxCornerRadiusBottomEnd="20dp"
-                            app:hintEnabled="false"
-                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
-                            app:hintTextColor="@color/birufigma"
-                            app:startIconContentDescription="Nama Pasien">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/txt_jnspx1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@color/transparan"
-                                android:fontFamily="@font/bariol_bold"
-                                android:inputType="text"
-                                app:boxBackgroundColor="@color/white" />
-                        </com.google.android.material.textfield.TextInputLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="16dp" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="15dp"
-                        android:drawableLeft="@drawable/ic_baseline_circle_24"
-                        android:drawablePadding="10dp"
-                        android:text="Asuransi / Perusahaan"
-                        android:fontFamily="@font/bariol_bold" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="15dp"
-                        app:cardBackgroundColor="@color/backgroundDarkGrey"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="0dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            app:cardBackgroundColor="@color/backgroundDarkGrey"
-                            app:cardCornerRadius="10dp"
-                            app:cardElevation="0dp">
-
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:id="@+id/wrapSpinner"
-                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:layout_marginHorizontal="15dp"
-                                android:background="@color/transparan"
-                                android:focusable="false"
-                                app:hintTextColor="@color/birufigma"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent">
-
-                            <androidx.appcompat.widget.AppCompatSpinner
-                                    android:id="@+id/spn_asuransi"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_row="9"
-                                    android:layout_column="0"
-                                    android:layout_columnWeight="0.5"
-                                    android:padding="10dp"
-                                    android:tooltipText="Dokter Penanggung Jawab" />
-
-                            </com.google.android.material.textfield.TextInputLayout>
-                        </androidx.cardview.widget.CardView>
-
-                    </androidx.cardview.widget.CardView>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="16dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="15dp"
-                        android:drawableLeft="@drawable/ic_baseline_circle_24"
-                        android:drawablePadding="10dp"
-                        android:text="Jenis Kunjungan"
-                        android:fontFamily="@font/bariol_bold" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        app:cardBackgroundColor="@color/backgroundDarkGrey"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="0dp">
-                    <RadioGroup
-                        android:id="@+id/rg_bpjs"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="horizontal">
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Registrasi Akun Pasien Baru" />
 
-                        <RadioButton
-                            android:id="@+id/rbrujuk"
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginVertical="3dp"
-                            android:background="@drawable/radio_selector"
-                            android:button="@color/transparan"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:foreground="?attr/selectableItemBackground"
-                            android:elevation="1dp"
-                            android:fontFamily="@font/bariol_bold"
-                            android:gravity="center"
-                            android:text="Rujukan"
-                            android:textColor="@drawable/text_color">
-                        </RadioButton>
-
-                        <RadioButton
-                            android:id="@+id/rbkontrol"
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/radio_selector"
-                            android:button="@color/transparan"
-                            android:elevation="1dp"
-                            android:fontFamily="@font/bariol_bold"
-                            android:clickable="true"
-                            android:layout_marginVertical="3dp"
-                            android:layout_marginRight="10dp"
-                            android:focusable="true"
-                            android:foreground="?attr/selectableItemBackground"
-                            android:gravity="center"
-                            android:text="Kontrol"
-                            android:textColor="@drawable/text_color"/>
-
-                    </RadioGroup>
-                    </androidx.cardview.widget.CardView>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="16dp" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="15dp"
                         android:layout_marginTop="10dp"
-                        android:drawableLeft="@drawable/ic_baseline_circle_24"
                         android:drawablePadding="10dp"
                         android:fontFamily="@font/bariol_bold"
-                        android:text="No Rujukan :" />
+                        android:text="NIK Pasien" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
@@ -444,7 +141,131 @@
 
 
                         <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/wrapjnspx2"
+                            android:id="@+id/txt_username2"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            app:boxCornerRadiusBottomEnd="20dp"
+                            app:hintEnabled="false"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:hintTextColor="@color/birufigma"
+                            app:startIconContentDescription="Nama Pasien">
+
+                            <EditText
+                                android:id="@+id/inputNIK"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="16"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/bariol_bold"
+                                android:inputType="number">
+
+                            </EditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Nama Lengkap" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        app:cardBackgroundColor="@color/backgroundDarkGrey"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txt_username3"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            app:boxCornerRadiusBottomEnd="20dp"
+                            app:hintEnabled="false"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:hintTextColor="@color/birufigma"
+                            app:startIconContentDescription="Nama Pasien">
+
+                        <EditText
+                            android:id="@+id/inputNama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/bariol_bold"
+                            android:inputType="text"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Alamat Email" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        app:cardBackgroundColor="@color/backgroundDarkGrey"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            app:boxCornerRadiusBottomEnd="20dp"
+                            app:hintEnabled="false"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:hintTextColor="@color/birufigma"
+                            app:startIconContentDescription="Nama Pasien">
+
+                            <EditText
+                                android:id="@+id/inputEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/bariol_bold"
+                                android:inputType="textEmailAddress"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="No Telepon" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        app:cardBackgroundColor="@color/backgroundDarkGrey"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -457,7 +278,7 @@
                             app:startIconContentDescription="Nama Pasien">
 
                             <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/txt_jnspx2"
+                                android:id="@+id/inputHP"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@color/transparan"
@@ -466,23 +287,20 @@
                                 app:boxBackgroundColor="@color/white" />
                         </com.google.android.material.textfield.TextInputLayout>
                     </androidx.cardview.widget.CardView>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="16dp" />
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:layout_marginHorizontal="15dp"
-                        android:drawableLeft="@drawable/ic_baseline_circle_24"
                         android:drawablePadding="10dp"
                         android:fontFamily="@font/bariol_bold"
-                        android:text="Tentukan Jadwal:" />
+                        android:text="Tanggal Lahir" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="15dp"
                         app:cardBackgroundColor="@color/backgroundDarkGrey"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="0dp">
@@ -505,43 +323,114 @@
                             app:hintTextColor="@color/birufigma"
                             app:startIconContentDescription="NIK Pasien">
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/tglPeriksa"
+                            <EditText
+                                android:id="@+id/inputTgllahir"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="25dp"
-                                android:layout_marginEnd="20dp"
-                                android:background="@color/transparan"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="35dp"
                                 android:focusable="false"
+                                android:background="@android:color/transparent"
                                 android:fontFamily="@font/bariol_bold"
-                                app:boxBackgroundColor="@color/white" />
+                                android:inputType="none"/>
                         </com.google.android.material.textfield.TextInputLayout>
                     </androidx.cardview.widget.CardView>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="16dp" />
+
                     <TextView
-                        android:layout_width="170dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="15dp"
-                        android:drawableLeft="@drawable/ic_baseline_circle_24"
+                        android:layout_marginTop="10dp"
                         android:drawablePadding="10dp"
                         android:fontFamily="@font/bariol_bold"
-                        android:text="Pilih Waktu Kunjungan:" />
+                        android:text="Tempat Lahir" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
                         app:cardBackgroundColor="@color/backgroundDarkGrey"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="0dp">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="60dp"
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:layout_marginLeft="10dp"
-                            android:src="@drawable/ic_time24" />
+                            app:boxCornerRadiusBottomEnd="20dp"
+                            app:hintEnabled="false"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:hintTextColor="@color/birufigma"
+                            app:startIconContentDescription="Nama Pasien">
+
+                            <EditText
+                                android:id="@+id/inputTempatlahir"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/bariol_bold"
+                                android:inputType="text"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Alamat" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        app:cardBackgroundColor="@color/backgroundDarkGrey"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            app:boxCornerRadiusBottomEnd="20dp"
+                            app:hintEnabled="false"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:hintTextColor="@color/birufigma"
+                            app:startIconContentDescription="Nama Pasien">
+
+                            <EditText
+                                android:id="@+id/inputAlamat"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/bariol_bold"
+                                android:inputType="text"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Jenis Klamin" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="15dp"
+                        app:cardBackgroundColor="@color/backgroundDarkGrey"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -557,10 +446,9 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-                                android:id="@+id/spn_waktu"
+                                android:id="@+id/act_gender"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginHorizontal="20dp"
                                 android:background="@color/transparan"
                                 android:focusable="false"
                                 android:fontFamily="@font/bariol_bold"
@@ -575,10 +463,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="15dp"
                         android:layout_marginTop="10dp"
-                        android:drawableLeft="@drawable/ic_baseline_circle_24"
                         android:drawablePadding="10dp"
                         android:fontFamily="@font/bariol_bold"
-                        android:text="Dokter Penangung Jawab (*)" />
+                        android:text="Alergi" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
@@ -588,16 +475,52 @@
                         app:cardCornerRadius="10dp"
                         app:cardElevation="0dp">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="60dp"
-                            android:layout_marginLeft="10dp"
-                            android:src="@drawable/ic_doctor30" />
 
                         <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txt_username1"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            app:boxCornerRadiusBottomEnd="20dp"
+                            app:hintEnabled="false"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:hintTextColor="@color/birufigma"
+                            app:startIconContentDescription="Nama Pasien">
+
+                            <EditText
+                                android:id="@+id/inputAlergi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/bariol_bold"
+                                android:hint="Alergi"
+                                android:inputType="text"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Golongan Darah" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="15dp"
+                        app:cardBackgroundColor="@color/backgroundDarkGrey"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="15dp"
                             android:background="@color/transparan"
                             android:focusable="false"
@@ -607,43 +530,178 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
-                            <androidx.appcompat.widget.AppCompatSpinner
-                                android:id="@+id/spn_dokter"
+                            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                                android:id="@+id/act_goldarah"
                                 android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:layout_row="9"
-                                android:layout_column="0"
-                                android:layout_columnWeight="0.5"
-                                android:layout_marginStart="30dp"
-                                android:layout_marginEnd="20dp"
-                                android:padding="10dp"
-                                android:tooltipText="Dokter Penanggung Jawab"
-                                app:boxCornerRadiusBottomEnd="20dp"
-                                app:boxCornerRadiusBottomStart="20dp"
-                                app:boxCornerRadiusTopEnd="20dp"
-                                app:boxCornerRadiusTopStart="20dp" />
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparan"
+                                android:focusable="false"
+                                android:fontFamily="@font/bariol_bold"
+                                android:inputType="none"
+                                tools:ignore="LabelFor" />
+
                         </com.google.android.material.textfield.TextInputLayout>
                     </androidx.cardview.widget.CardView>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                    </View>
+
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                android:id="@+id/btn_kirim"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16sp"
-                android:gravity="center"
-                android:text="kirim"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                android:theme="@style/FabExtendedMaterialTheme"
-                app:iconTint="@color/white"
-                app:layout_constraintTop_toBottomOf="@+id/cardView12"/>
+                android:layout_marginHorizontal="10dp"
+                app:cardElevation="10dp"
+                android:layout_marginTop="10dp"
+                android:outlineAmbientShadowColor="@color/birufigma"
+                android:outlineSpotShadowColor="@color/birufigma"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Buat Password Baru" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Passowrd" />
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        app:cardBackgroundColor="@color/backgroundDarkGrey"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputLayout22"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:boxCornerRadiusBottomEnd="20dp"
+                            app:hintEnabled="false"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:hintTextColor="@color/birufigma"
+                            app:passwordToggleEnabled="true"
+                            app:startIconContentDescription="Nama Pasien">
+
+                            <EditText
+                                android:id="@+id/inputPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/bariol_bold"
+                                android:inputType="textPassword"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Confirm Passowrd" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        app:cardBackgroundColor="@color/backgroundDarkGrey"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:boxCornerRadiusBottomEnd="20dp"
+                            app:hintEnabled="false"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            app:hintTextColor="@color/birufigma"
+                            app:passwordToggleEnabled="true"
+                            app:startIconContentDescription="Nama Pasien">
+
+                            <EditText
+                                android:id="@+id/inputConfirmPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/bariol_bold"
+                                android:hint="Confirm Password"
+                                android:inputType="textPassword"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                    </View>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/fabSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_rectangle_gradient2"
+                        android:focusable="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bariol_bold"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingHorizontal="82dp"
+                        android:text="Log in"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        </View>
         </LinearLayout>
+
     </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -78,9 +78,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }
         btn_login           = findViewById(R.id.btn_login);
         /*btn_clearuser       = findViewById(R.id.tmbl_clear);
         btn_clearpass       = findViewById(R.id.tmbl_clear_pass);
@@ -115,7 +112,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             txt_password.setText(pass_px);
         }
 
-        img_login = findViewById(R.id.imageView);
+//        img_login = findViewById(R.id.imageView);
         txt_username.requestFocus();
         layAwal.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
