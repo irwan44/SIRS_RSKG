@@ -922,13 +922,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
     public void RegistRS(View view) {
-        Intent i = new Intent(MainActivity.this, RegistPoli.class);
-        i.putExtra("kde_Klinik", kode_rs);
-        i.putExtra("kde_dokter", "");
-        i.putExtra("nma_Klinik", nama_rs);
-        i.putExtra("nma_dokter", "");
+        Intent i = new Intent(MainActivity.this, AntrianActivity.class);
+//        i.putExtra("kde_Klinik", kode_rs);
+//        i.putExtra("kde_dokter", "");
+//        i.putExtra("nma_Klinik", nama_rs);
+//        i.putExtra("nma_dokter", "");
         startActivity(i);
     }
+
     public void MRpasien(View view) {
         Intent i = new Intent(MainActivity.this, MRpasienActivity.class);
         i.putExtra("kd_klinik", "C00002");
@@ -936,7 +937,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
     public void Antrian(View view) {
-        Intent i = new Intent(MainActivity.this, AntrianRegistrasi.class);
+        Intent i = new Intent(MainActivity.this, AntrianActivity.class);
         startActivity(i);
     }
     public void RegistHemodialisa(View view) {

@@ -25,6 +25,7 @@
     <color name="colorRipple">#E5F5F5</color>
     <color name="backgroundDarkGrey">#F6F9FE</color>
     <color name="colorBackground">#F6F9FE</color>
+    <color name="gery">#959393</color>
 
     <!--color untuk gradient tansition-->
     <color name="bacground">#F6F9FE</color>
