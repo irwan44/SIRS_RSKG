@@ -105,9 +105,7 @@ public class EditPasienLama extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_pasien_lama);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }
+
 
         //menerapkan tool bar sesuai id toolbar | ToolBarAtas adalah variabel buatan sndiri
         Toolbar LabToolbar = (Toolbar) findViewById(R.id.toolbar);

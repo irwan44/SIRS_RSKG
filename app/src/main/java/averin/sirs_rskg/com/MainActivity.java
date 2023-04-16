@@ -30,6 +30,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 import android.content.Intent;
 import android.view.View;
@@ -42,6 +43,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.AnimationTypes;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -134,6 +139,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+        ImageSlider imgSlider = findViewById(R.id.image_slider1);
+        List<SlideModel> slideModels = new ArrayList<>();
+
+        slideModels.add(new SlideModel("https://www.rshabibie.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frskg.f9df673d.avif&w=1920&q=75", ScaleTypes.FIT));
+        slideModels.add(new SlideModel("https://www.rshabibie.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frskg3.95543dd3.avif&w=1920&q=75", ScaleTypes.FIT));
+        slideModels.add(new SlideModel("https://www.rshabibie.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frskg4.c0e5ff4a.avif&w=1920&q=75", ScaleTypes.FIT));
+
+        imgSlider.setImageList(slideModels);
+        imgSlider.setSlideAnimation(AnimationTypes.ZOOM_OUT);
 
         SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.refreshLayout);
         swipeRefreshLayout.setOnRefreshListener(
