@@ -16,6 +16,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -59,10 +60,60 @@ public class AntrianActivity extends AppCompatActivity {
     public String urlAntrian = APIurl+"get-jadwal-px.php";
     public String linkJanda  = APIurl+"get-token.php";
 
+    LinearLayout personalinfo, experience, review;
+    TextView personalinfobtn, experiencebtn, reviewbtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_antrian);
+
+        personalinfo = findViewById(R.id.personalinfo);
+        experience = findViewById(R.id.experience);
+        personalinfobtn = findViewById(R.id.personalinfobtn);
+        experiencebtn = findViewById(R.id.experiencebtn);
+        /*making personal info visible*/
+        personalinfo.setVisibility(View.VISIBLE);
+        experience.setVisibility(View.GONE);
+
+
+        personalinfobtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                personalinfo.setVisibility(View.VISIBLE);
+                experience.setVisibility(View.GONE);
+                personalinfobtn.setTextColor(getResources().getColor(R.color.birufigma));
+                experiencebtn.setTextColor(getResources().getColor(R.color.gery));
+
+            }
+        });
+
+        experiencebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                personalinfo.setVisibility(View.GONE);
+                experience.setVisibility(View.VISIBLE);
+                personalinfobtn.setTextColor(getResources().getColor(R.color.gery));
+                experiencebtn.setTextColor(getResources().getColor(R.color.birufigma));
+
+            }
+        });
+
+//        reviewbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                personalinfo.setVisibility(View.GONE);
+//                experience.setVisibility(View.GONE);
+//                review.setVisibility(View.VISIBLE);
+//                personalinfobtn.setTextColor(getResources().getColor(R.color.gery));
+//                experiencebtn.setTextColor(getResources().getColor(R.color.gery));
+//                reviewbtn.setTextColor(getResources().getColor(R.color.birufigma));
+//
+//            }
+//        });
 
         //menerapkan tool bar sesuai id toolbar | ToolBarAtas adalah variabel buatan sndiri
         Toolbar LabToolbar = (Toolbar)findViewById(R.id.toolbar);
