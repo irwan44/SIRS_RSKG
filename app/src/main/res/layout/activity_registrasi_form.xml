@@ -91,7 +91,7 @@
                 android:layout_height="134dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
-                android:src="@drawable/image">
+                android:src="@drawable/logo_rskg_jernis">
 
             </ImageView>
 

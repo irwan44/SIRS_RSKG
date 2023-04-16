@@ -187,68 +187,69 @@
                     android:outlineSpotShadowColor="@color/birufigma"
                     android:layout_height="wrap_content">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp">
-                    <com.denzcoskun.imageslider.ImageSlider
-                        android:id="@+id/image_slider1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="300dp"
-                        app:iss_auto_cycle="true"
-                        app:iss_period="5000"
-                        app:iss_delay="5000"
-                        app:iss_text_align="CENTER"/>
-
-                    <LinearLayout
-                        android:id="@+id/ly"
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#A4B1B1AE"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginBottom="35dp"
-                        android:orientation="horizontal">
+                        android:layout_height="210dp">
 
-                        <ImageView
-                            android:layout_width="68dp"
-                            android:layout_height="48dp"
-                            android:layout_marginTop="5dp"
-                            android:src="@drawable/logo_rskg" />
-
-                        <TextView
-                            android:id="@+id/txt_nama_rs"
+                        <com.denzcoskun.imageslider.ImageSlider
+                            android:id="@+id/image_slider1"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:fontFamily="@font/bariol_bold"
-                            android:gravity="center"
-                            android:text=" - "
-                            android:textColor="@color/white"
-                            android:textSize="14dp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
+                            android:layout_height="300dp"
+                            app:iss_auto_cycle="true"
+                            app:iss_delay="5000"
+                            app:iss_period="5000"
+                            app:iss_text_align="CENTER" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/ly"
-                        android:background="#A4B1B1AE"
-                        android:layout_marginTop="-35dp">
-
-                        <TextView
-                            android:id="@+id/txt_alamat_rs"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:id="@+id/ly"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
-                            android:layout_marginLeft="6dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="5dp"
-                            android:drawableLeft="@drawable/ic_location15"
-                            android:drawablePadding="7dp"
-                            android:fontFamily="@font/bariol_bold"
-                            android:text=" - "
-                            android:textColor="@color/white" />
-                    </LinearLayout>
-                </RelativeLayout>
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="35dp"
+                            android:background="#A4B1B1AE"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="68dp"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/logo_rskg" />
+
+                            <TextView
+                                android:id="@+id/txt_nama_rs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/bariol_bold"
+                                android:gravity="center"
+                                android:text=" - "
+                                android:textColor="@color/white"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ly"
+                            android:layout_marginTop="-35dp"
+                            android:background="#A4B1B1AE">
+
+                            <TextView
+                                android:id="@+id/txt_alamat_rs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:drawableLeft="@drawable/ic_location15"
+                                android:drawablePadding="7dp"
+                                android:fontFamily="@font/bariol_bold"
+                                android:text=" - "
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
 <!--                <androidx.cardview.widget.CardView-->
@@ -820,6 +821,8 @@
                                     android:layout_marginStart="5sp"
                                     android:layout_marginTop="10sp"
                                     android:layout_marginEnd="5sp"
+                                    android:clickable="true"
+                                    android:focusable="true"
                                     android:layout_marginBottom="10sp"
                                     android:onClick="InfoDMedis"
                                     android:outlineAmbientShadowColor="@color/birufigma"
@@ -833,6 +836,7 @@
                                         android:layout_height="match_parent"
                                         android:clickable="true"
                                         android:focusable="true"
+                                        android:onClick="InfoDMedis"
                                         android:foreground="?attr/selectableItemBackground"
                                         android:paddingStart="13sp"
                                         android:paddingTop="5sp"
@@ -845,6 +849,7 @@
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="42dp"
+                                        android:onClick="InfoDMedis"
                                         android:layout_gravity="bottom"
                                         android:fontFamily="@font/bariol_bold"
                                         android:gravity="center"

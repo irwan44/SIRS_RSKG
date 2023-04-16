@@ -918,8 +918,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void InfoDMedis(View view) {
-//        Intent i = new Intent(MainActivity.this, InfoDmedis.class);
-//        startActivity(i);
+        Intent i = new Intent(MainActivity.this, test_layout.class);
+        startActivity(i);
     }
     public void RegistRS(View view) {
         Intent i = new Intent(MainActivity.this, RegistPoli.class);

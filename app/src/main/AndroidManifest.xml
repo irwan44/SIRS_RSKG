@@ -66,6 +66,7 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".test_layout"
+            android:theme="@style/Theme.D_Medis.NoActionBar"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
