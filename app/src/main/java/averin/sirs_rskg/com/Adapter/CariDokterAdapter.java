@@ -82,7 +82,7 @@ public class CariDokterAdapter extends BaseAdapter {
 
         txt_namaDokter.setText(list.get(position).getNama_dokter());
         txt_JenisPoli.setText(list.get(position).getBagian());
-        img_Dokter.setImageResource(R.drawable.logo_rskg);
+        img_Dokter.setImageResource(R.drawable.profile22);
         txt_kddokter.setText(list.get(position).getKode_dokter());
         txt_idnyadokter.setText(list.get(position).getIdnya_dokter());
         txt_kdbag.setText(list.get(position).getKode_bag());
@@ -90,7 +90,7 @@ public class CariDokterAdapter extends BaseAdapter {
         txt_nmklinik.setText(list.get(position).getNm_klinik());
         txt_wktperiksa.setText(list.get(position).getWaktu_periksa());
 
-        range_hari = list.get(position).getRange_hari();
+//        range_hari = list.get(position).getRange_hari();
         jam_awal = list.get(position).getJam_mulai();
         jam_akhir = list.get(position).getJam_akhir();
         //KONVERT WAKTU DOKTER
@@ -105,7 +105,7 @@ public class CariDokterAdapter extends BaseAdapter {
         }
         jam_konvert_awal = outputwaktu.format(wkt_awal);
         jam_konvert_akhir = outputwaktu.format(wkt_akhir);
-        txt_jamPeriksa.setText(range_hari+" \n( "+ jam_konvert_awal+ " - "+jam_konvert_akhir+" )");
+        txt_jamPeriksa.setText(jam_konvert_awal+ " - "+jam_konvert_akhir);
 
         //DECODE FOTO DOKTER
         txt_sFoto.setText(list.get(position).getFoto_dokter());

@@ -479,6 +479,8 @@ public class RegistHemo extends AppCompatActivity {
         final String tanggal        = edt_tglPeriksa.getText().toString();
         final String kodeDokter     = kd_dokter;
         final String nmaDokter      = nm_dokter;
+        final String jenis_px       = jenispx;
+        final String nm_asuransi    = 
         String waktu_pesan    = spn_waktu_kunj.getText().toString();
         if(waktu_pesan.equals("Pagi")){
             flagPesan = "1";

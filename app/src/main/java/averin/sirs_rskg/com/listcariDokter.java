@@ -220,12 +220,12 @@ public class listcariDokter extends AppCompatActivity implements SwipeRefreshLay
                             jam_mulai    = jso.getString("jam_mulai");
                             jam_akhir    = jso.getString("jam_akhir");
                             wkt_periksa  = jso.getString("waktu_periksa");
-                            range_hari  = jso.getString("range_hari");
+//                            range_hari  = jso.getString("range_hari");
                             sFoto        = jso.getString("foto");
 
                             caridokter.add(new DokterPoli(kd_klinik, nm_klinik, nm_dokter,
                                     kd_dokter, idnya_dokter, kd_bag, bag, jam_mulai, jam_akhir,
-                                    wkt_periksa,range_hari, sFoto));
+                                    wkt_periksa, sFoto));
                         }
                     }
                 } catch (JSONException e) {
@@ -301,12 +301,12 @@ public class listcariDokter extends AppCompatActivity implements SwipeRefreshLay
                             jam_mulai    = jso.getString("jam_mulai");
                             jam_akhir    = jso.getString("jam_akhir");
                             wkt_periksa  = jso.getString("waktu_periksa");
-                            range_hari  = jso.getString("range_hari");
+//                            range_hari  = jso.getString("range_hari");
                             sFoto        = jso.getString("foto");
 
                             caridokter.add(new DokterPoli(kd_klinik, nm_klinik, nm_dokter,
                                     kd_dokter, idnya_dokter, kd_bag, bag, jam_mulai, jam_akhir,
-                                    wkt_periksa,range_hari ,sFoto));
+                                    wkt_periksa ,sFoto));
                         }
                     }
                     adapter.notifyDataSetChanged();

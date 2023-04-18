@@ -60,7 +60,6 @@ public class DokterPoliAdapter extends RecyclerView.Adapter<DokterPoliAdapter.Do
         holder.txt_kdklinik.setText(list.get(position).getKd_klinik());
         holder.txt_nmklinik.setText(list.get(position).getNm_klinik());
         holder.txt_wktperiksa.setText(list.get(position).getWaktu_periksa());
-        range_hari = list.get(position).getRange_hari();
         jam_awal = list.get(position).getJam_mulai();
         jam_akhir = list.get(position).getJam_akhir();
 
@@ -76,7 +75,7 @@ public class DokterPoliAdapter extends RecyclerView.Adapter<DokterPoliAdapter.Do
         }
         jam_konvert_awal = outputwaktu.format(wkt_awal);
         jam_konvert_akhir = outputwaktu.format(wkt_akhir);
-        holder.txt_jamPeriksa.setText(range_hari+" \n( "+ jam_konvert_awal+ " - "+jam_konvert_akhir+" )");
+        holder.txt_jamPeriksa.setText(jam_konvert_awal+ " - "+jam_konvert_akhir);
 
         //DECODE FOTO DOKTER
         holder.txt_sFoto.setText(list.get(position).getFoto_dokter());

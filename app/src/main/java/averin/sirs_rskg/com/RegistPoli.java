@@ -12,9 +12,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,6 +42,7 @@ import java.util.List;
 import java.util.Locale;
 
 import averin.sirs_rskg.com.Adapter.DokterPoliAdapter;
+import averin.sirs_rskg.com.Adapter.ListPoliAdapter;
 import averin.sirs_rskg.com.Adapter.PoliListAdapter;
 import averin.sirs_rskg.com.Adapter.RequestHandler;
 import averin.sirs_rskg.com.Adapter.SpinnerAdapter;
@@ -74,6 +80,7 @@ public class RegistPoli extends AppCompatActivity {
 
     private ArrayList<DokterPoli> ArrayDokter = new ArrayList<>();
     private ArrayList<isiSpinner> listPoli = new ArrayList<isiSpinner>();
+    private ArrayList<isiSpinner> dataPoli = new ArrayList<isiSpinner>();
     private PoliListAdapter polilistAdapt;
     private DokterPoliAdapter DokterpoliAdapter;
     String APIurl = RequestHandler.APIdev;
@@ -129,9 +136,9 @@ public class RegistPoli extends AppCompatActivity {
         img_null        = findViewById(R.id.img_null_data);
         imgbtn_home     = findViewById(R.id.imgbtn_home);
 
-//        s_poli          = findViewById(R.id.s_poli);
-//        s_poli.setTitle("Pilih Poli");
-//        s_poli.setPositiveButton("Kembali");
+        s_poli          = findViewById(R.id.s_poli);
+        s_poli.setTitle("Pilih Poli");
+        s_poli.setPositiveButton("Kembali");
 
         imgbtn_home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -153,7 +160,7 @@ public class RegistPoli extends AppCompatActivity {
         val_token = (String.valueOf(token.gettoken()));
         Bundle kiriman = getIntent().getExtras();
         if (kiriman != null) {
-//            kd_klinik   = kiriman.get("kde_Klinik").toString();
+            kd_klinik   = kiriman.get("kde_Klinik").toString();
             kd_dokter   = kiriman.get("kde_dokter").toString();
             nm_klinik   = kiriman.get("nma_Klinik").toString();
             nm_Dokter = kiriman.get("nma_dokter").toString();
@@ -174,7 +181,15 @@ public class RegistPoli extends AppCompatActivity {
         DokterPoliCycleview.setAdapter(DokterpoliAdapter);
         //RECYLEVIEW LIST POLI
         // Initialize listener
-        rv_poli = findViewById(R.id.rv_poli);
+//        rv_poli = findViewById(R.id.rv_poli);
+//        for (int i = 0; i < 20; i++) {
+//            // add values in array list
+//            isiSpinner item = new isiSpinner();
+//            item.setId("kode_bagian"+i);
+//            item.setKet("nama_bagian");
+//            listPoli.add(item);
+//        }
+
         itemClickListener = new ItemClickListener() {
             @Override public void onClick(String s)
             {
@@ -185,36 +200,33 @@ public class RegistPoli extends AppCompatActivity {
                         polilistAdapt.notifyDataSetChanged();
                     }
                 });
-                // Display toast
-                Toast
-                        .makeText(getApplicationContext(),
-                                "Selected : " + s,
-                                Toast.LENGTH_SHORT)
-                        .show();
+                dataPoli.isEmpty();
+                viewDokter(s,"");
+
             }
         };
 
-        rv_poli.setLayoutManager(new LinearLayoutManager(RegistPoli.this, LinearLayoutManager.HORIZONTAL, false));
-        polilistAdapt = new PoliListAdapter(listPoli, itemClickListener);
-        rv_poli.setAdapter(polilistAdapt);
+//        rv_poli.setLayoutManager(new LinearLayoutManager(RegistPoli.this, LinearLayoutManager.HORIZONTAL, false));
+//        polilistAdapt = new PoliListAdapter(listPoli, itemClickListener);
+//        rv_poli.setAdapter(polilistAdapt);
 
-
-//        spa = new SpinnerAdapter(RegistPoli.this, listPoli);
+//        spa = new SpinnerAdapter(RegistPoli.this, dataPoli);
 //        s_poli.setAdapter(spa);
-//        s_poli.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                // TODO Auto-generated method stub
-//                kd_bagian = listPoli.get(position).getId();
-//                bag = listPoli.get(position).getKet();
-//                viewDokter(kd_bagian,"");
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//                // TODO Auto-generated method stub
-//            }
-//        });
+        s_poli.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                // TODO Auto-generated method stub
+                kd_bagian = dataPoli.get(position).getId();
+                bag = dataPoli.get(position).getKet();
+                itemClickListener.equals("");
+                viewDokter(kd_bagian,"");
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // TODO Auto-generated method stub
+            }
+        });
 
     }
 
@@ -324,7 +336,7 @@ public class RegistPoli extends AppCompatActivity {
     private void GetPoliList() {
         //first getting the values
         final String iniToken     = val_token;
-        final String kodeRS       = "C00002";
+        final String kodeRS       = kd_klinik;
         listPoli.clear();
 
         //if everything is fine
@@ -337,7 +349,7 @@ public class RegistPoli extends AppCompatActivity {
                 RequestHandler requestHandler = new RequestHandler();
                 //creating request parameters
                 params = new HashMap<String, HashMap<String, String>>();
-                params.put("kode_klinik", "C00002");
+                params.put("kode_klinik", kodeRS);
 
                 //returing the response
                 return requestHandler.requestData(urlPoli, "POST", "application/json; charset=utf-8", "X-Api-Token",
@@ -365,16 +377,14 @@ public class RegistPoli extends AppCompatActivity {
 
                         isiSpinner item = new isiSpinner();
                         JSONObject jr = jso.getJSONObject(a);
-
                         item.setId(jr.getString("kode_bagian"));
                         item.setKet(jr.getString("nama_bagian"));
-                        listPoli.add(item);
+                        dataPoli.add(item);
                         dt_poli.add(jr.getString("nama_bagian"));
                     }
-//                    ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplication(), R.layout.dialog_spinner,dt_poli);
-//                    s_poli.setAdapter(adapter);
+                    ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplication(), R.layout.dialog_spinner,dt_poli);
+                    s_poli.setAdapter(adapter);
 //                    spa.notifyDataSetChanged();
-//                    polilistAdapter.notifyDataSetChanged();
 //                    hideDialog();
 
                 } catch (JSONException e) {
@@ -388,11 +398,11 @@ public class RegistPoli extends AppCompatActivity {
 
     private void viewDokter(final String filter_kdBagian, final String kde_Dokter) {
         //first getting the values
-//        final String kode_klinik  = kd_klinik;
+        final String kodeRS  = kd_klinik;
         final String iniToken   = val_token;
         final String order      = "asc";
         final String offset     = "0";
-        final String limit      = "100";
+        final String limit      = "10";
         ArrayDokter.clear();
 
         //if everything is fine
@@ -409,12 +419,12 @@ public class RegistPoli extends AppCompatActivity {
                 //creating request parameters
                 params = new HashMap<String, HashMap<String, String>>();
                 HashMap<String, String> val = new HashMap<String, String>();
-//                val.put("filter", filter_kdBagian);
+                val.put("filter", filter_kdBagian);
                 val.put("kdeDokter", kde_Dokter);
                 val.put("order", order);
                 val.put(offset, offset);
                 val.put("limit", limit);
-                params.put("kode_klinik","C00002");
+                params.put("kode_klinik",kodeRS);
                 params.put("filter", filter_kdBagian);
                 //returing the response
                 return requestHandler.requestData(urlGetDokter, "POST", "application/json; charset=utf-8", "X-Api-Token",
@@ -458,12 +468,12 @@ public class RegistPoli extends AppCompatActivity {
                             jam_mulai    = jso.getString("jam_mulai");
                             jam_akhir    = jso.getString("jam_akhir");
                             wkt_periksa  = jso.getString("waktu_periksa");
-                            range_hari   = jso.getString("range_hari");
+//                            range_hari   = jso.getString("range_hari");
                             sFoto        = jso.getString("foto");
 
-                            ArrayDokter.add(new DokterPoli("C00002", nm_klinik, nm_dokter,
+                            ArrayDokter.add(new DokterPoli("C00003", nm_klinik, nm_dokter,
                                     kd_dokter, idnya_dokter, kd_bag, bag, jam_mulai, jam_akhir,
-                                    wkt_periksa, range_hari, sFoto));
+                                    wkt_periksa, sFoto));
                         }
                         DokterpoliAdapter.notifyDataSetChanged();
                     }
@@ -489,7 +499,7 @@ public class RegistPoli extends AppCompatActivity {
 
     public void cariDokter(View view) {
         Intent i = new Intent(RegistPoli.this, listcariDokter.class);
-        i.putExtra("kodeKlinik", "C00002");
+        i.putExtra("kodeKlinik", kd_klinik);
         i.putExtra("namaKlinik", nm_klinik);
         startActivity(i);
     }

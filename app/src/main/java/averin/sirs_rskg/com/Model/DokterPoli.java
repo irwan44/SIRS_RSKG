@@ -5,7 +5,7 @@ public class DokterPoli {
             jam_mulai, jam_akhir, wkt_periksa, range_hari, sFoto;
 
     public DokterPoli(String kd_klinik, String nm_klinik, String nm_dokter, String kd_dokter, String idnya_dokter,
-                      String kd_bag, String bag, String jam_mulai, String jam_akhir, String wkt_periksa, String range_hari, String sFoto) {
+                      String kd_bag, String bag, String jam_mulai, String jam_akhir, String wkt_periksa, String sFoto) {
         this.kd_klinik      = kd_klinik;
         this.nm_klinik      = nm_klinik;
         this.nm_dokter      = nm_dokter;
@@ -16,7 +16,6 @@ public class DokterPoli {
         this.jam_mulai      = jam_mulai;
         this.jam_akhir      = jam_akhir;
         this.wkt_periksa    = wkt_periksa;
-        this.range_hari     = range_hari;
         this.sFoto          = sFoto;
     }
 
@@ -30,7 +29,6 @@ public class DokterPoli {
     public String getJam_mulai() {return jam_mulai;}
     public String getJam_akhir() {return jam_akhir;}
     public String getWaktu_periksa() {return wkt_periksa;}
-    public String getRange_hari() {return range_hari;}
     public String getFoto_dokter() {return sFoto;}
     public void setNama_dokter(String nm_dokter) {
         this.nm_dokter = nm_dokter; }
