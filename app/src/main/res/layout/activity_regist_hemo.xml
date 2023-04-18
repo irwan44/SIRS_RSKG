@@ -259,6 +259,7 @@
 
                             <RadioButton
                                 android:id="@+id/rbpxbaru"
+                                android:onClick="CekPxLama"
                                 android:checked="true"
                                 android:layout_width="wrap_content"
                                 android:layout_height="35dp"
@@ -279,6 +280,7 @@
 
                             <RadioButton
                                 android:id="@+id/rbpxlama"
+                                android:onClick="CekPxLama"
                                 android:layout_width="wrap_content"
                                 android:layout_height="35dp"
                                 android:layout_marginVertical="3dp"

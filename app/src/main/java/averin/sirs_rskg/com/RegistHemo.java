@@ -63,8 +63,8 @@ public class RegistHemo extends AppCompatActivity {
 
     TextView txt_info_success, txt_info_failed, txt_tipePX, txt_infoPx1, txt_infoPx2, txt_asuransi, txt_kunjbpjs;
     EditText edt_tglPeriksa, edt_namaPasien, edt_jnsPx1, edt_jnsPx2;
-    String val_token, ktpPasien, flagPesan, urlFoto, kd_dokter, nm_dokter, jns_kunj_bpjs,
-             kd_klinik, kd_asuransi, nama_asuransi, tglKonvert, jenispx;
+    String val_token, ktpPasien, flagPesan, kd_dokter, nm_dokter, jns_kunj_bpjs,
+             kd_klinik, kd_asuransi, nama_asuransi, tglKonvert, jenispx, px_lama;
     ConnectivityManager conMgr;
     Button btn_kirim, btn_ok_failed, btn_ok_success;
     Intent Antrian;
@@ -85,13 +85,11 @@ public class RegistHemo extends AppCompatActivity {
     List<String> listJenis = new ArrayList<>();
     CardView cr_jnsPx1, cr_jnsPx2, cr_rgbpjs, cr_asuransi;
     RadioGroup rg_bpjs;
-    RadioButton rb_rujuk, rb_kontrol;
+    RadioButton rb_rujuk, rb_kontrol, rbpx_baru, rbpx_lama;
 
     private Calendar mCalendar = Calendar.getInstance();
     SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault());
     String APIurl = RequestHandler.APIdev;
-    String px_baru = "baru";
-    String px_lama = "lama";
     public String urlDaftar = APIurl+"post-daftar-hemo.php";
     public String urlcekPasien = APIurl+"get-data-px.php";
     public String urlDokterPenanggung = APIurl+"get-dokter-hemo.php";
@@ -126,8 +124,6 @@ public class RegistHemo extends AppCompatActivity {
 
         edt_namaPasien = findViewById(R.id.txt_namaPasien);
         edt_tglPeriksa = findViewById(R.id.tglPeriksa);
-        edt_jnsPx1     = findViewById(R.id.edt_jnspx1);
-        edt_jnsPx2     = findViewById(R.id.edt_jnspx2);
         spn_jnsPx      = findViewById(R.id.spn_jnsPasien);
         spn_waktu_kunj = findViewById(R.id.spn_waktu);
         imgbtn_home    = findViewById(R.id.imgbtn_home);
@@ -480,7 +476,12 @@ public class RegistHemo extends AppCompatActivity {
         final String kodeDokter     = kd_dokter;
         final String nmaDokter      = nm_dokter;
         final String jenis_px       = jenispx;
-        final String nm_asuransi    = 
+        final String kode_asuransi  = kd_asuransi;
+        final String edt_jnspx1     = edt_jnsPx1.getText().toString();
+        final String edt_jnspx2     = edt_jnsPx2.getText().toString();
+        final String jen_kunj_BPJS  = jns_kunj_bpjs;
+        final String pxLama         = px_lama;
+
         String waktu_pesan    = spn_waktu_kunj.getText().toString();
         if(waktu_pesan.equals("Pagi")){
             flagPesan = "1";
@@ -511,6 +512,12 @@ public class RegistHemo extends AppCompatActivity {
                 params.put("tgl_daftar", tanggal);
                 params.put("kode_dokter", kodeDokter);
                 params.put("nama_dokter", nmaDokter);
+                params.put("jenis_px", jenis_px);
+                params.put("kd_asuransi", kode_asuransi);
+                params.put("field1", edt_jnspx1);
+                params.put("field2", edt_jnspx2);
+                params.put("jns_kunj_bpjs", jen_kunj_BPJS);
+                params.put("px_lama", pxLama);
                 //returing the response
                 return requestHandler.requestData(urlDaftar, "POST", "application/json; charset=utf-8", "X-Api-Token",
                         isiToken, "X-Px-Key", "", params);
@@ -568,7 +575,7 @@ public class RegistHemo extends AppCompatActivity {
             cr_jnsPx1.setVisibility(View.VISIBLE);
             cr_asuransi.setVisibility(View.GONE);
             txt_asuransi.setVisibility(View.GONE);
-            jenispx = "2";
+            jenispx = "3";
         }else if(nama_jnsPx.equals("Asuransi/Perusahaan")){
             txt_tipePX.setText("Asuransi/Perusahaan");
             txt_infoPx2.setText("No Polis :");
@@ -580,7 +587,7 @@ public class RegistHemo extends AppCompatActivity {
             txt_kunjbpjs.setVisibility(View.GONE);
             cr_asuransi.setVisibility(View.VISIBLE);
             txt_asuransi.setVisibility(View.VISIBLE);
-            jenispx = "3";
+            jenispx = "2";
         }else if(nama_jnsPx.equals("Karyawan")){
             lay_jenisPx.setVisibility(View.GONE);
             jenispx = "4";
@@ -592,14 +599,28 @@ public class RegistHemo extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.rbrujuk:
                 if (checked)
-                    jns_kunj_bpjs = "rujuk";
+                    jns_kunj_bpjs = "1";
                     txt_infoPx2.setText("No Rujukan :");
                     break;
             case R.id.rbkontrol:
                 if (checked)
-                    jns_kunj_bpjs = "kontrol";
+                    jns_kunj_bpjs = "2";
                     txt_infoPx2.setText("No Surat Kontrol :");
                     break;
+        }
+    }
+
+    public void CekPxLama(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+        switch(view.getId()) {
+            case R.id.rbpxbaru:
+                if (checked)
+                    px_lama = "1";
+                break;
+            case R.id.rbpxlama:
+                if (checked)
+                    px_lama = "2";
+                break;
         }
     }
 
