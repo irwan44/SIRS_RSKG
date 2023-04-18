@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="vertical"
+    android:layout_height="match_parent">
     <TextView
         android:id="@+id/txt_idReg"
         android:layout_width="wrap_content"
@@ -24,133 +26,120 @@
         android:layout_height="wrap_content"
         android:visibility="gone"/>
 
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="124dp"
-        app:cardCornerRadius="20dp"
-        android:outlineAmbientShadowColor="@color/birufigma"
-        android:outlineSpotShadowColor="@color/birufigma"
-        app:cardElevation="5dp"
-        android:layout_marginVertical="10dp"
+        android:layout_height="130dp"
         android:layout_marginHorizontal="10dp"
-        android:foreground="?attr/selectableItemBackground"
-        android:layout_margin="@dimen/inner_components_spacing"
-        app:cardBackgroundColor="@color/birufigma"
-        android:orientation="horizontal">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="wrap_content"
-            android:layout_height="124dp"
-            android:background="@drawable/bg_no_antrian"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-                android:fontFamily="@font/bariol_bold"
-                android:padding="5sp"
-                android:text="No Antrian"
-                android:textAlignment="center"
-                android:textColor="#2699F9"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/txt_noantrian"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/bariol_bold"
-                android:text="A15"
-                android:gravity="center_horizontal"
-                android:textColor="#2699F9"
-                android:textSize="50sp" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/antrian22334">
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="120dp"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/averin_bg"/>
-        </LinearLayout>
-
-        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            android:paddingEnd="15sp">
-
-            <TextView
-                android:id="@+id/txt_nmKlinik"
-                android:layout_width="200dp"
-                android:gravity="right"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:fontFamily="@font/bariol_bold"
-                android:padding="3sp"
-                android:text="Klinik Omega Citra Raya"
-                android:textColor="@color/primaryWhiteColor" />
-
-            <TextView
-                android:id="@+id/txt_nmDokter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:fontFamily="@font/bariol_bold"
-                android:padding="3sp"
-                android:text="Dr. Sartika Dewi Asih"
-                android:textColor="@color/primaryWhiteColor" />
-
-            <TextView
-                android:id="@+id/txt_nmPoli"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:fontFamily="@font/bariol_regular"
-                android:paddingEnd="3sp"
-                android:text="Poliklinik Umum"
-                android:textColor="@color/primaryWhiteColor" />
-
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginTop="5sp"
-                android:background="@drawable/bg_rounded_blue"
-                android:orientation="horizontal"
-                android:padding="5sp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
+                android:layout_height="124dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:paddingStart="3sp"
-                    android:src="@drawable/ic_calendar" />
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/bariol_bold"
+                    android:padding="5sp"
+                    android:text="No Antrian"
+                    android:textAlignment="center"
+                    android:textColor="#2699F9"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/txt_tglAntrian"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:paddingStart="5sp"
-                    android:text="01 Sept 2022, "
-                    android:textColor="@color/primaryWhiteColor"
-                    android:textSize="10sp" />
-
-                <TextView
-                    android:id="@+id/txt_jamAwal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:paddingEnd="3sp"
-                    android:text="14:00 WIB"
-                    android:textColor="@color/primaryWhiteColor"
-                    android:textSize="10sp" />
+                    android:id="@+id/txt_noantrian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/bariol_bold"
+                    android:text="A15"
+                    android:gravity="center_horizontal"
+                    android:textColor="#2699F9"
+                    android:textSize="50sp" />
             </androidx.appcompat.widget.LinearLayoutCompat>
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.cardview.widget.CardView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingEnd="15sp">
+
+                <TextView
+                    android:id="@+id/txt_nmKlinik"
+                    android:layout_width="200dp"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/bariol_bold"
+                    android:padding="3sp"
+                    android:text="Klinik Omega Citra Raya"
+                    android:textColor="@color/primaryWhiteColor" />
+
+                <TextView
+                    android:id="@+id/txt_nmDokter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/bariol_bold"
+                    android:padding="3sp"
+                    android:text="Dr. Sartika Dewi Asih"
+                    android:textColor="@color/primaryWhiteColor" />
+
+                <TextView
+                    android:id="@+id/txt_nmPoli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/bariol_regular"
+                    android:paddingEnd="3sp"
+                    android:text="Poliklinik Umum"
+                    android:textColor="@color/primaryWhiteColor" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5sp"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:orientation="horizontal"
+                    android:padding="5sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="3sp"
+                        android:src="@drawable/ic_calendar" />
+
+                    <TextView
+                        android:id="@+id/txt_tglAntrian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingStart="5sp"
+                        android:text="01 Sept 2022, "
+                        android:textColor="@color/primaryWhiteColor"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/txt_jamAwal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingEnd="3sp"
+                        android:text="14:00 WIB"
+                        android:textColor="@color/primaryWhiteColor"
+                        android:textSize="10sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

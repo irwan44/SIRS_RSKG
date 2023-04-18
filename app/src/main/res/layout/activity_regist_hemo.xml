@@ -112,40 +112,51 @@
                             app:iss_period="5000"
                             app:iss_delay="5000"
                             app:iss_text_align="CENTER"/>
+
+                        <LinearLayout
+                            android:id="@+id/ly"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="35dp"
+                            android:background="#A4B1B1AE"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:fontFamily="@font/bariol_regular"
+                                    android:text="Informasi Hemodialisis"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_info_hemo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/bariol_regular"
+                                    android:text="@string/info_hemo"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
                     </RelativeLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView5">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_marginBottom="5dp"
-                            android:fontFamily="@font/bariol_regular"
-                            android:text="Informasi Hemodialisis"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/txt_info_hemo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:fontFamily="@font/bariol_regular"
-                            android:text="@string/info_hemo"
-                            android:textColor="@color/black"
-                            android:textSize="12sp" />
-                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

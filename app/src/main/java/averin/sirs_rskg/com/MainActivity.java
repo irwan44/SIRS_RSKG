@@ -20,9 +20,11 @@ import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 
@@ -142,6 +144,10 @@ public class MainActivity extends AppCompatActivity {
 
         ImageSlider imgSlider = findViewById(R.id.image_slider1);
         List<SlideModel> slideModels = new ArrayList<>();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
 
         slideModels.add(new SlideModel("https://www.rshabibie.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frskg.f9df673d.avif&w=1920&q=75", ScaleTypes.FIT));
         slideModels.add(new SlideModel("https://www.rshabibie.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frskg3.95543dd3.avif&w=1920&q=75", ScaleTypes.FIT));
@@ -922,11 +928,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
     public void RegistRS(View view) {
-        Intent i = new Intent(MainActivity.this, AntrianActivity.class);
-//        i.putExtra("kde_Klinik", kode_rs);
-//        i.putExtra("kde_dokter", "");
-//        i.putExtra("nma_Klinik", nama_rs);
-//        i.putExtra("nma_dokter", "");
+        Intent i = new Intent(MainActivity.this, RegistPoli.class);
+        i.putExtra("kde_Klinik", kode_rs);
+        i.putExtra("kde_dokter", "");
+        i.putExtra("nma_Klinik", nama_rs);
+        i.putExtra("nma_dokter", "");
         startActivity(i);
     }
 
