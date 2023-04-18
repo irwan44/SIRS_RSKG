@@ -3,7 +3,7 @@
     <!-- Bottom 2dp Shadow -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="#F6F7FB"></solid>
+            <solid android:color="@color/birufigma"></solid>
             <corners android:radius="10dp" />
         </shape>
     </item>
@@ -15,7 +15,7 @@
         android:left="40dp">
 
         <shape  android:shape="rectangle">
-            <solid android:color="#F6F7FB" />
+            <solid android:color="@color/birufigma" />
             <corners android:radius="10dp" />
         </shape>
     </item>
