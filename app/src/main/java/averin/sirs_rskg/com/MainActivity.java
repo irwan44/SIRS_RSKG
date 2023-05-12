@@ -722,7 +722,7 @@ public class MainActivity extends AppCompatActivity {
                         String wkt_periksa  = jso.getString("waktu_periksa");
                         String range_hari  = jso.getString("range_hari");
                         String sFoto        = jso.getString("foto");
-                        ArrayDokterPoli.add(new DokterPoli(kode_rs, nama_rs, nm_dokter, kd_dokter, idnya_dokter, kd_bag, bag, jam_mulai, jam_akhir, wkt_periksa,range_hari, sFoto));
+                        ArrayDokterPoli.add(new DokterPoli(kode_rs, nama_rs, nm_dokter, kd_dokter, idnya_dokter, kd_bag, bag, jam_mulai, jam_akhir, wkt_periksa, sFoto));
                     }
                     jadwaldokterAdapter.notifyDataSetChanged();
 //                    }
@@ -929,7 +929,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void RegistRS(View view) {
         Intent i = new Intent(MainActivity.this, RegistPoli.class);
-        i.putExtra("kde_Klinik", kode_rs);
+        i.putExtra("kde_Klinik", "C00003");
         i.putExtra("kde_dokter", "");
         i.putExtra("nma_Klinik", nama_rs);
         i.putExtra("nma_dokter", "");

@@ -16,9 +16,9 @@ import okhttp3.Response;
 
 public class RequestHandler {
 
-    public static final String APIdev = "http://192.168.38.26:8080/api/v1/";
+//    public static final String APIdev = "http://192.168.38.26:8080/api/v1/";
 //   public static final String APIdev = "https://api-dev.averin.co.id/api/v1/";
-//   public static final String APIdev = "https://rskg-ainun.sirs.co.id/api/v1/";
+   public static final String APIdev = "https://rskg-ainun.sirs.co.id/api/v1/";
 
     public String reqToken(String postUrl, HashMap<String, String> param) {
         Response response;
