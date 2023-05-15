@@ -72,7 +72,7 @@ public class RegistHemo extends AppCompatActivity {
     DateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd");
     DateFormat inputFormat = new SimpleDateFormat("dd-LLL-yyyy");
 
-    String[] waktukunj = new String[]{"Pagi", "Siang"};
+    String[] waktukunj = new String[]{"Pagi","Siang","Malam"};
     AutoCompleteTextView spn_waktu_kunj;
     ProgressDialog pDialog;
     Spinner spn_dokter, spn_asuransi, spn_jnsPx;
