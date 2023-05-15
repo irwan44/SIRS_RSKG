@@ -159,7 +159,7 @@
                         android:layout_marginTop="10dp"
                         android:drawablePadding="10dp"
                         android:fontFamily="@font/bariol_bold"
-                        android:text="Passowrd" />
+                        android:text="Password" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"

@@ -755,7 +755,7 @@
                         android:drawableLeft="@drawable/ic_baseline_circle_24"
                         android:drawablePadding="10dp"
                         android:fontFamily="@font/bariol_bold"
-                        android:text="Dokter Penangung Jawab (*)" />
+                        android:text="Dokter Penanggung Jawab (*)" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
