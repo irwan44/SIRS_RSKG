@@ -3,14 +3,14 @@ plugins {
 }
 
 android {
-//        signingConfigs {
-//        debug {
-//            storeFile file('C:\\Dev Android\\Keystore_averin\\Averin_dev.jks')
-//            storePassword '48family'
-//            keyAlias 'Averin2023'
-//            keyPassword '48family'
-//        }
-//    }
+        signingConfigs {
+        debug {
+            storeFile file('C:\\Dev Android\\Keystore_averin\\Averin_dev.jks')
+            storePassword '48family'
+            keyAlias 'Averin2023'
+            keyPassword '48family'
+        }
+    }
 
     compileSdk 33
     lintOptions {
@@ -22,8 +22,8 @@ android {
         applicationId "averin.sirs_rskg.com"
         minSdk 25
         targetSdk 33
-        versionCode 6
-        versionName "6"
+        versionCode 8
+        versionName "8"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         useLibrary 'org.apache.http.legacy'
         signingConfig signingConfigs.debug

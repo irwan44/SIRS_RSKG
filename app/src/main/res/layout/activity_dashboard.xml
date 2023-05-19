@@ -139,6 +139,7 @@
                             android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:layout_marginRight="10dp"
+                            android:visibility="gone"
                             android:onClick="aksibtnLogin"
                             android:src="@drawable/ic_notifications"
                             android:text="Login/Daftar"
