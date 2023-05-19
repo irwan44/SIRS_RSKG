@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "averin.sirs_pluit.com",
+  "applicationId": "averin.sirs_rskg.com",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 1,
-      "versionName": "1.0",
+      "versionCode": 8,
+      "versionName": "8",
       "outputFile": "app-release.apk"
     }
   ],

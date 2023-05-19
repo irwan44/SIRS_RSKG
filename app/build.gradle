@@ -5,7 +5,7 @@ plugins {
 android {
         signingConfigs {
         debug {
-            storeFile file('C:\\Dev Android\\Keystore_averin\\Averin_dev.jks')
+            storeFile file('C:\\sc android java\\Keystore_averin\\Averin_dev.jks')
             storePassword '48family'
             keyAlias 'Averin2023'
             keyPassword '48family'

@@ -144,7 +144,6 @@ public class EditPasienLama extends AppCompatActivity {
         img_fotoPasien  = findViewById(R.id.fotoPasien);
         et_nama         = findViewById(R.id.et_namapasien);
         et_usia         = findViewById(R.id.et_usia);
-//        et_goldarah     = findViewById(R.id.et_goldarah);
         actGender       = findViewById(R.id.act_gender);
         actgolDarah     = findViewById(R.id.act_goldarah);
         et_alergi       = findViewById(R.id.et_alergi);

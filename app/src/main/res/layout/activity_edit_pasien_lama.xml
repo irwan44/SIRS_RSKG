@@ -444,7 +444,7 @@
 
                             <androidx.cardview.widget.CardView
                                 android:layout_width="match_parent"
-                                android:layout_height="60dp"
+                                android:layout_height="match_parent"
                                 android:layout_marginHorizontal="10dp"
                                 android:layout_marginBottom="15dp"
                                 app:cardBackgroundColor="@color/backgroundDarkGrey"
@@ -452,9 +452,9 @@
                                 app:cardElevation="0dp">
 
                                 <com.google.android.material.textfield.TextInputLayout
-                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                                     android:layout_width="match_parent"
-                                    android:layout_height="50dp"
+                                    android:layout_height="match_parent"
                                     android:background="@color/transparan"
                                     android:focusable="false"
                                     android:layout_marginHorizontal="25dp"
@@ -496,34 +496,28 @@
                                         android:text="Usia" />
 
                                     <androidx.cardview.widget.CardView
-                                        android:layout_width="match_parent"
+                                        android:layout_width="100dp"
                                         android:layout_height="match_parent"
                                         android:layout_marginHorizontal="15dp"
                                         app:cardBackgroundColor="@color/backgroundDarkGrey"
                                         app:cardCornerRadius="10dp"
                                         app:cardElevation="0dp">
 
-                                        <!--                    <ImageView-->
-                                        <!--                        android:layout_width="wrap_content"-->
-                                        <!--                        android:layout_height="60dp"-->
-                                        <!--                        android:layout_marginLeft="10dp"-->
-                                        <!--                        android:src="@drawable/icon_user" />-->
-
                                         <com.google.android.material.textfield.TextInputLayout
                                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:layout_gravity="center"
                                             app:boxCornerRadiusBottomEnd="20dp"
+                                            android:gravity="center"
                                             app:hintEnabled="false"
                                             app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
                                             app:hintTextColor="@color/birufigma"
-                                            app:startIconContentDescription="Nama Pasien">
+                                            app:startIconContentDescription="Usia Pasien">
 
                                             <com.google.android.material.textfield.TextInputEditText
                                                 android:id="@+id/et_usia"
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
+                                                android:layout_height="match_parent"
                                                 android:background="@color/transparan"
                                                 android:fontFamily="@font/bariol_bold"
                                                 android:inputType="text"
@@ -554,10 +548,10 @@
                                         app:cardElevation="0dp">
 
                                         <com.google.android.material.textfield.TextInputLayout
+                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                                             android:id="@+id/wrapSpinner"
-                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                             android:layout_width="match_parent"
-                                            android:layout_height="50dp"
+                                            android:layout_height="match_parent"
                                             android:layout_marginHorizontal="15dp"
                                             android:background="@color/transparan"
                                             android:focusable="false"

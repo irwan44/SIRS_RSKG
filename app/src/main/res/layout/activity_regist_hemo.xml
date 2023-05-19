@@ -678,9 +678,9 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="20dp"
                             app:boxCornerRadiusBottomEnd="20dp"
-                            app:hintEnabled="false"
+                            android:hint="Pilih Tanggal"
                             app:hintTextColor="@color/birufigma"
-                            app:startIconContentDescription="NIK Pasien">
+                            app:startIconContentDescription="Tgl Periksa">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/tglPeriksa"

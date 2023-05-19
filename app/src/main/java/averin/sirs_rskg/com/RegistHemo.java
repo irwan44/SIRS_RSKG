@@ -214,6 +214,7 @@ public class RegistHemo extends AppCompatActivity {
         btn_ok_success.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Antrian = new Intent(RegistHemo.this, AntrianActivity.class);
                 startActivity(Antrian);
                 dial_success.dismiss();
 

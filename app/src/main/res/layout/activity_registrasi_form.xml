@@ -32,6 +32,7 @@
                     android:layout_height="35dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
+                    android:onClick="balikLogin"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:navigationIcon="@drawable/arrow_left"/>
@@ -44,10 +45,10 @@
                     android:drawableRight="@drawable/icon_right2"
                     android:fontFamily="@font/bariol_bold"
                     android:gravity="center"
-
                     android:padding="10dp"
                     android:text="Back to Login"
                     android:textAlignment="center"
+                    android:onClick="balikLogin"
                     android:textColor="@color/blue_500"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.183"

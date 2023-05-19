@@ -173,17 +173,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/lyr_pilihKlinik"
                 tools:layout_editor_absoluteX="20dp">
 
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:fontFamily="@font/bariol_bold"
-                    android:text="Jenis Antrian"/>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:orientation="horizontal">
 
                 <TextView
