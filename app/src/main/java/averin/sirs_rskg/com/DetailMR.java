@@ -282,10 +282,13 @@ public class DetailMR extends AppCompatActivity {
                 //creating request parameters
                 params = new HashMap<String, HashMap<String, String>>();
                 HashMap<String, String> val = new HashMap<String, String>();
+                params.put("kode_klinik", kdklinik);
                 val.put("id", Regid);
                 val.put("url_rs", url_rs);
-                params.put("kode_klinik", kdklinik);
                 params.put("param", val);
+                params.put("kode_klinik", kdklinik);
+                params.put("id", Regid);
+                params.put("url_rs", url_rs);
 
                 //returing the response
                 return requestHandler.requestData(urlDetailMR, "POST", "application/json; charset=utf-8", "X-Api-Token",

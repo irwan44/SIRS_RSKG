@@ -42,7 +42,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class AntrianActivity extends AppCompatActivity {
 
-    String val_token, no_ktp, dateNow;
+    String val_token, no_ktp, dateNow, jnsAntrian;
     String APIurl = RequestHandler.APIdev;
     ProgressBar prgbar;
     EditText edt_pilihtanggal;
@@ -57,63 +57,40 @@ public class AntrianActivity extends AppCompatActivity {
     private ArrayList<Antrian> ArrayAntrian = new ArrayList<>();
     private AntrianAdapter Aa;
     private Calendar mCalendar;
-    public String urlAntrian = APIurl+"get-jadwal-px.php";
+    public String urlAntrianPoli = APIurl+"get-jadwal-px.php";
+    public String urlAntrianHemo = APIurl+"get-jadwal-hemo-px.php";
     public String linkJanda  = APIurl+"get-token.php";
-
-    LinearLayout personalinfo, experience, review;
-    TextView personalinfobtn, experiencebtn, reviewbtn;
+    TextView antrianPoli, antrianHemo, reviewbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_antrian);
 
-        personalinfo = findViewById(R.id.personalinfo);
-        experience = findViewById(R.id.experience);
-        personalinfobtn = findViewById(R.id.personalinfobtn);
-        experiencebtn = findViewById(R.id.experiencebtn);
-        /*making personal info visible*/
-        personalinfo.setVisibility(View.VISIBLE);
-        experience.setVisibility(View.GONE);
+        antrianPoli = findViewById(R.id.antrianPoli);
+        antrianHemo = findViewById(R.id.antrianHemo);
 
-
-        personalinfobtn.setOnClickListener(new View.OnClickListener() {
+        antrianPoli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                personalinfo.setVisibility(View.VISIBLE);
-                experience.setVisibility(View.GONE);
-                personalinfobtn.setTextColor(getResources().getColor(R.color.birufigma));
-                experiencebtn.setTextColor(getResources().getColor(R.color.gery));
+                jnsAntrian = "1";
+                cekToken(jnsAntrian);
+                antrianPoli.setTextColor(getResources().getColor(R.color.birufigma));
+                antrianHemo.setTextColor(getResources().getColor(R.color.gery));
 
             }
         });
 
-        experiencebtn.setOnClickListener(new View.OnClickListener() {
+        antrianHemo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                personalinfo.setVisibility(View.GONE);
-                experience.setVisibility(View.VISIBLE);
-                personalinfobtn.setTextColor(getResources().getColor(R.color.gery));
-                experiencebtn.setTextColor(getResources().getColor(R.color.birufigma));
+                jnsAntrian = "2";
+                cekToken(jnsAntrian);
+                antrianPoli.setTextColor(getResources().getColor(R.color.gery));
+                antrianHemo.setTextColor(getResources().getColor(R.color.birufigma));
 
             }
         });
-
-//        reviewbtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                personalinfo.setVisibility(View.GONE);
-//                experience.setVisibility(View.GONE);
-//                review.setVisibility(View.VISIBLE);
-//                personalinfobtn.setTextColor(getResources().getColor(R.color.gery));
-//                experiencebtn.setTextColor(getResources().getColor(R.color.gery));
-//                reviewbtn.setTextColor(getResources().getColor(R.color.birufigma));
-//
-//            }
-//        });
 
         //menerapkan tool bar sesuai id toolbar | ToolBarAtas adalah variabel buatan sndiri
         Toolbar LabToolbar = (Toolbar)findViewById(R.id.toolbar);
@@ -140,14 +117,14 @@ public class AntrianActivity extends AppCompatActivity {
         edt_pilihtanggal.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
-                cekToken();
+                cekToken(jnsAntrian);
             }
         });
 
         cariAntrian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cekToken();
+                cekToken(jnsAntrian);
             }
         });
 
@@ -157,7 +134,7 @@ public class AntrianActivity extends AppCompatActivity {
         no_ktp    = (String.valueOf(login.getKTP_pasien()));
         val_token    = (String.valueOf(token.gettoken()));
 
-        cekToken();
+        cekToken("1");
         listAntrian.setLayoutManager(new LinearLayoutManager(this));
         Aa = new AntrianAdapter(this, ArrayAntrian);
         listAntrian.setAdapter(Aa);
@@ -180,7 +157,7 @@ public class AntrianActivity extends AppCompatActivity {
         startActivity(startMain);
     }
 
-    public void cekToken() {
+    public void cekToken(String jenis) {
         //first getting the values
         final String isiToken    = val_token;
         final String ktp         = no_ktp;
@@ -223,8 +200,10 @@ public class AntrianActivity extends AppCompatActivity {
                     //if no error in response
                     if (obj.getString("code").equals("500")) {
                         ambilToken();
-                    } else {
+                    } else if(jenis.equals("1")){
                         viewAntrian();
+                    }else if(jenis.equals("2")){
+                        viewAntrianHemo();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -341,7 +320,7 @@ public class AntrianActivity extends AppCompatActivity {
 //                params.put("Pass", pass);
 
                 //returing the response
-                return requestHandler.requestData(urlAntrian, "POST", "application/json; charset=utf-8", "X-Api-Token",
+                return requestHandler.requestData(urlAntrianPoli, "POST", "application/json; charset=utf-8", "X-Api-Token",
                         iniToken, "X-Px-Key", "", params);
             }
 
@@ -366,12 +345,9 @@ public class AntrianActivity extends AppCompatActivity {
                         cv_nullantrian.setVisibility(View.GONE);
                         txt_nullantrian.setVisibility(View.GONE);
                         img_nullantrian.setVisibility(View.GONE);
+                        listAntrian.setVisibility(View.VISIBLE);
                         JSONArray jr = obj.getJSONArray("list");
                         for (int a = 0; a < jr.length(); a++) {
-                            txt_nullantrian.setVisibility(View.GONE);
-                            img_nullantrian.setVisibility(View.GONE);
-                            cv_nullantrian.setVisibility(View.GONE);
-                            listAntrian.setVisibility(View.VISIBLE);
                             JSONObject jso = jr.getJSONObject(a);
                             String idReg = jso.getString("idReg");
                             String no_antrian = jso.getString("no_antrian");
@@ -388,11 +364,97 @@ public class AntrianActivity extends AppCompatActivity {
                         Aa.notifyDataSetChanged();
 
                     }else if(obj.getString("code").equals("500")){
+                        listAntrian.setVisibility(View.GONE);
                         cv_nullantrian.setVisibility(View.VISIBLE);
                         img_nullantrian.setVisibility(View.VISIBLE);
                         txt_nullantrian.setVisibility(View.VISIBLE);
                         Toast.makeText(getApplicationContext(), obj.getString("msg"),
                                 Toast.LENGTH_SHORT).show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        masukPakEko pl = new masukPakEko();
+        pl.execute();
+    }
+
+    private void viewAntrianHemo() {
+        //first getting the values
+        ArrayAntrian.clear();
+        final String iniToken   = val_token;
+        final String ktp        = no_ktp;
+        final String tgl_cari   = edt_pilihtanggal.getText().toString();
+
+        if (TextUtils.isEmpty(tgl_cari)) {
+            edt_pilihtanggal.setError("Please input date");
+            edt_pilihtanggal.requestFocus();
+            return;
+        }
+
+        //if everything is fine
+        class masukPakEko extends AsyncTask<Void, Void, String> {
+
+            @Override
+            protected String doInBackground(Void... voids) {
+                //creating request handler object
+                RequestHandler requestHandler = new RequestHandler();
+
+                //creating request parameters
+                HashMap<String, String> params = new HashMap<>();
+                params.put("kode_klinik", "C00003");
+                params.put("no_ktp", ktp);
+                params.put("tgl", tgl_cari);
+//                params.put("Pass", pass);
+
+                //returing the response
+                return requestHandler.requestData(urlAntrianHemo, "POST", "application/json; charset=utf-8", "X-Api-Token",
+                        iniToken, "X-Px-Key", "", params);
+            }
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                prgbar = findViewById(R.id.progressBar);
+                prgbar.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+                super.onPostExecute(s);
+                prgbar.setVisibility(View.GONE);
+
+                try {//converting response to json object
+                    JSONObject obj = new JSONObject(s);
+                    //if no error in response
+
+                    if(obj.getString("code").equals("200")){
+
+                        cv_nullantrian.setVisibility(View.GONE);
+                        txt_nullantrian.setVisibility(View.GONE);
+                        img_nullantrian.setVisibility(View.GONE);
+                        listAntrian.setVisibility(View.VISIBLE);
+                        JSONArray jr = obj.getJSONArray("list");
+                        for (int a = 0; a < jr.length(); a++) {
+                            JSONObject jso = jr.getJSONObject(a);
+                            String idReg = jso.getString("idReg");
+                            String nmDokter = jso.getString("nama_dokter");
+                            String tgl = jso.getString("tgl");
+                            String jamAwal = jso.getString("wkt_pesan");
+                            String status = jso.getString("status");
+                            String nmKlinik = jso.getString("RSKG");
+                            String nmBagian = jso.getString("nama_bagian");
+//                            ArrayKlinik.add(new Klinik(idk,np,alamat,logo));
+                            ArrayAntrian.add(new Antrian(idReg,"",nmDokter,tgl,jamAwal,"",status,nmKlinik,nmBagian));
+                        }
+                        Aa.notifyDataSetChanged();
+
+                    }else if(obj.getString("code").equals("500")){
+                        listAntrian.setVisibility(View.GONE);
+                        cv_nullantrian.setVisibility(View.VISIBLE);
+                        img_nullantrian.setVisibility(View.VISIBLE);
+                        txt_nullantrian.setVisibility(View.VISIBLE);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

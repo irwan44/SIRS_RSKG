@@ -317,7 +317,8 @@ public class MRpasienActivity extends AppCompatActivity {
                 //creating request parameters
                 HashMap<String, String> params = new HashMap<>();
                 params.put("kode_klinik", kode_klinik);
-                params.put("no_ktp", ktpPX);
+                params.put("ktp", ktpPX);
+                params.put("url_rs", "https://rskg-ainun.sirs.co.id/");
                 params.put("tgl_mr", tgl_mr);
 
                 //returing the response

@@ -180,7 +180,7 @@
                     android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/personalinfobtn"
+                    android:id="@+id/antrianPoli"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -193,11 +193,13 @@
                     android:textStyle="bold" />
 
                 <LinearLayout
-                    android:layout_width="1dp"
+                    android:layout_width="2dp"
+                    android:layout_marginVertical="3dp"
+                    android:background="@color/grey_font"
                     android:layout_height="match_parent" />
 
                 <TextView
-                    android:id="@+id/experiencebtn"
+                    android:id="@+id/antrianHemo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -219,38 +221,13 @@
     </androidx.cardview.widget.CardView>
     <!--    END TOOLBAR-->
 
-<!--    untuk konten antrian poli-->
-    <LinearLayout
-        android:id="@+id/personalinfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/cardView7">
-
-        <!--About Me Card-->
-
-    </LinearLayout>
-    <!--    untuk konten antrian Hemodia;isis-->
-    <LinearLayout
-        android:id="@+id/experience"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/cardView7">
-
-
-
-
-    </LinearLayout>
-
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/pg1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/personalinfo"
         tools:ignore="MissingConstraints">
-
 
         <RelativeLayout
             android:id="@+id/rl_null_antrian"
@@ -305,7 +282,7 @@
                     android:fontFamily="@font/bariol_bold"
                     android:gravity="center"
                     android:text="Tidak ada antrian saat ini"
-                    android:textColor="@color/white"></TextView>
+                    android:textColor="@color/white"/>
             </androidx.cardview.widget.CardView>
         </RelativeLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
